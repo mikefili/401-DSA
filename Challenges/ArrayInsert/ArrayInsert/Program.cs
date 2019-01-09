@@ -4,9 +4,12 @@ namespace ArrayShift
 {
     public class Program
     {
+        // declare Main method
         static void Main(string[] args)
         {
+            // declare and populate initial array
             int[] array = { 2, 4, 6, 8 };
+            // iterate through initial array to console
             Console.Write("Current Array: [");
             for (int i = 0; i < array.Length - 1; i++)
             {
@@ -15,10 +18,11 @@ namespace ArrayShift
             Console.Write($"{array[array.Length - 1]}");
             Console.WriteLine("]");
 
+            // request additional int from user to insert into array
             Console.Write("Please provide an additional number: ");
-            int val = Convert.ToInt32(Console.ReadLine());
-            //call ArrayShift function then return a new array
-            int[] newArr = ArrayShift(array, val);
+            int value = Convert.ToInt32(Console.ReadLine());
+            // call ArrayShift method and return newArr including new value
+            int[] newArr = ArrayShift(array, value);
 
             //iterate through newArr and write each index
             Console.Write("New Array: [");
@@ -31,10 +35,12 @@ namespace ArrayShift
             Console.ReadLine();
         }
 
+        // declare ArrayShift method
         public static int[] ArrayShift(int[] array, int val)
         {
             int[] newArr = new int[array.Length + 1];
 
+            // find midpoint of array with even amount of indexes and return newArr
             if (array.Length % 2 == 0)
             {
                 int midPointIndex = array.Length * 1 / 2;
@@ -56,6 +62,7 @@ namespace ArrayShift
                 }
                 return newArr;
             }
+            // find midpoint of array with odd amount of indexes and return newArr
             else
             {
                 int midPointIndex = (array.Length+1 * 1 / 2);
