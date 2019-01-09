@@ -65,7 +65,7 @@ namespace ArrayShift
             // find midpoint of array with odd amount of indexes and return newArr
             else
             {
-                int midPointIndex = (array.Length+1 * 1 / 2);
+                int midPointIndex = (array.Length+1) * 1 / 2;
 
                 for (int i = 0; i < newArr.Length; i++)
                 {
