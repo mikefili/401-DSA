@@ -2,4 +2,5 @@
 
 ## Table of Contents
 
-1.  [Challenge: Insert and shift an array](Challenges/ArrayInsert)
+1.  [Challenge: Insert & Shift an Array](Challenges/ArrayInsert)
+2.  [Challenge: Array Binary Search](Challenges/BinarySearch)
