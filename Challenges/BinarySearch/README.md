@@ -9,3 +9,5 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ## Solution
 
 ![Whiteboard](../../Assets/array_binary_search.jpg)
+
+## Thank you!
