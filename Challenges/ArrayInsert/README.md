@@ -9,4 +9,4 @@ Write a method called ArrayInsert which takes in an array and the value to be ad
 
 ## Solution
 
-![Whiteboard](../../Assets/challenge01-whiteboard.jpg)
+![Whiteboard](../../Assets/array_shift.jpg)
