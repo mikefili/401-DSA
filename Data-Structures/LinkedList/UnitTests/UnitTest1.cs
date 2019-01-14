@@ -64,6 +64,28 @@ namespace UnitTests
         }
 
         [Fact]
+        public void CanFindNegativeValue()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(-5);
+
+            Assert.True(list.Includes(-5));
+        }
+
+        [Fact]
+        public void CanFindNull()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(5);
+            LinkedList expectedList = new LinkedList()
+            {
+                Current = null,
+                Head = new Node(5) { Next = null, Value = 5 }
+            };
+            Assert.Null(list.Head.Next);
+        }
+
+        [Fact]
         public void CanReturnExampleLinkedList()
         {
             Assert.NotNull(Program.ExampleList());
