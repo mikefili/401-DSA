@@ -4,3 +4,4 @@
 
 1.  [Challenge: Insert & Shift an Array](Challenges/ArrayInsert)
 2.  [Challenge: Array Binary Search](Challenges/BinarySearch)
+3.  [Data Structure: Linked List](Data-Structures/LinkedList)
