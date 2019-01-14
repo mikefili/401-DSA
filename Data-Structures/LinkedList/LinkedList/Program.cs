@@ -3,21 +3,24 @@ using System;
 
 namespace Linked_List
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             ExampleList();
         }
 
-        static void ExampleList()
+        /// <summary>
+        /// generate example list with three nodes
+        /// </summary>
+        public static Object ExampleList()
         {
             LinkedList list = new LinkedList();
             list.Insert(5);
             list.Insert(10);
             list.Insert(15);
             list.Print();
-            
+            return list;
         }
     }
 }
