@@ -50,17 +50,29 @@ namespace Linked_List.classes
         /// </summary>
         public void Print()
         {
-            Console.Write("HEAD --> ");
-            Console.Write(Head.Value);
-            Console.Write(" --> ");
-            Node Current = Head;
+            Current = Head;
+            Console.Write("HEAD: ");
+            Console.Write($"{Current.Value} => ");
             while (Current.Next != null)
             {
                 Current = Current.Next;
-                Console.Write(Current.Value);
-                Console.Write(" --> ");
+                Console.Write($"{Current.Value} => ");
             }
             Console.Write("NULL");
+        }
+
+        /// <summary>
+        /// append a new node with a given value to the array
+        /// </summary>
+        /// <param name="value">value to be added to list</param>
+        public void Append(int value)
+        {
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+            Node node = new Node(value);
+            Current.Next = node;
         }
     }
 }
