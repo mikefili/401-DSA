@@ -100,5 +100,31 @@ namespace Linked_List.classes
                 Current = Current.Next;
             }
         }
+
+        /// <summary>
+        /// insert a new node with a given value before a given node
+        /// </summary>
+        /// <param name="value">value of node to be inserted before</param>
+        /// <param name="newValue">new value to be added to list</param>
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+            if (Current.Next.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
     }
 }
