@@ -67,6 +67,7 @@ namespace Linked_List.classes
         /// <param name="value">value to be added to list</param>
         public void Append(int value)
         {
+            Current = Head;
             while (Current.Next != null)
             {
                 Current = Current.Next;

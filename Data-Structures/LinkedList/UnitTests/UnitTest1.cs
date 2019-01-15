@@ -8,6 +8,28 @@ namespace UnitTests
     public class UnitTest1
     {
         [Fact]
+        public void CanAppendNode()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(5);
+            list.Insert(10);
+            list.Insert(15);
+            list.Append(16);
+
+            int[] expectedValues = { 15, 10, 5, 16 };
+            int[] actualValues = new int[4];
+            int i = 0;
+            list.Current = list.Head;
+            while (list.Current != null)
+            {
+                actualValues[i] = list.Current.Value;
+                list.Current = list.Current.Next;
+                i++;
+            };
+            Assert.Equal(expectedValues, actualValues);
+        }
+
+        [Fact]
         public void CanInsertBefore()
         {
             LinkedList list = new LinkedList();
@@ -28,9 +50,6 @@ namespace UnitTests
             };
             Assert.Equal(expectedValues, actualValues);
         }
-
-        
-
 
         [Fact]
         public void CanInsertAfter()
@@ -137,18 +156,5 @@ namespace UnitTests
         {
             Assert.NotNull(Program.ExampleList());
         }
-
-        //[Fact]
-        //public void CanAppendNode()
-        //{
-        //    LinkedList list = new LinkedList();
-        //    list.Insert(5);
-        //    list.Insert(10);
-        //    list.Insert(15);
-        //    list.Append(16);
-
-        //    int[] expectedValues = { 15, 10, 5, 16 };
-        //    Assert.Equal(expectedValues, this);
-        //}
     }
 }
