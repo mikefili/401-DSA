@@ -30,6 +30,26 @@ namespace UnitTests
         }
 
         [Fact]
+        public void CanAppendNodeToOneNodeLinkedList()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(5);
+            list.Append(6);
+
+            int[] expectedValues = { 5, 6 };
+            int[] actualValues = new int[expectedValues.Length];
+            int i = 0;
+            list.Current = list.Head;
+            while (list.Current != null)
+            {
+                actualValues[i] = list.Current.Value;
+                list.Current = list.Current.Next;
+                i++;
+            };
+            Assert.Equal(expectedValues, actualValues);
+        }
+
+        [Fact]
         public void CanInsertBefore()
         {
             LinkedList list = new LinkedList();
