@@ -29,6 +29,31 @@ namespace UnitTests
             Assert.Equal(expectedValues, actualValues);
         }
 
+        
+
+
+        [Fact]
+        public void CanInsertAfter()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(5);
+            list.Insert(10);
+            list.Insert(15);
+            list.InsertAfter(10, 8);
+
+            int[] expectedValues = { 15, 10, 8, 5 };
+            int[] actualValues = new int[4];
+            int i = 0;
+            list.Current = list.Head;
+            while (list.Current != null)
+            {
+                actualValues[i] = list.Current.Value;
+                list.Current = list.Current.Next;
+                i++;
+            };
+            Assert.Equal(expectedValues, actualValues);
+        }
+
         [Fact]
         public void CanInsertSingleValue()
         {

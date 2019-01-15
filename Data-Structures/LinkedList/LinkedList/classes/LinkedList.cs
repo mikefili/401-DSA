@@ -109,7 +109,7 @@ namespace Linked_List.classes
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
-            if (Current.Next.Value == value)
+            if (Current.Value == value)
             {
                 Insert(newValue);
                 return;
