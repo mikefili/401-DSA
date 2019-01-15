@@ -50,17 +50,81 @@ namespace Linked_List.classes
         /// </summary>
         public void Print()
         {
-            Console.Write("HEAD --> ");
-            Console.Write(Head.Value);
-            Console.Write(" --> ");
-            Node Current = Head;
+            Current = Head;
+            Console.Write("HEAD: ");
+            Console.Write($"{Current.Value} => ");
             while (Current.Next != null)
             {
                 Current = Current.Next;
-                Console.Write(Current.Value);
-                Console.Write(" --> ");
+                Console.Write($"{Current.Value} => ");
             }
             Console.Write("NULL");
+        }
+
+        /// <summary>
+        /// append a new node with a given value to the array
+        /// </summary>
+        /// <param name="value">value to be added to list</param>
+        public void Append(int value)
+        {
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+            Node node = new Node(value);
+            Current.Next = node;
+        }
+
+        /// <summary>
+        /// insert a new node with a given value before a given node
+        /// </summary>
+        /// <param name="value">value of node to be inserted before</param>
+        /// <param name="newValue">new value to be added to list</param>
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+            if (Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        /// <summary>
+        /// insert a new node with a given value before a given node
+        /// </summary>
+        /// <param name="value">value of node to be inserted before</param>
+        /// <param name="newValue">new value to be added to list</param>
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+            if (Current.Next.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }
         }
     }
 }
