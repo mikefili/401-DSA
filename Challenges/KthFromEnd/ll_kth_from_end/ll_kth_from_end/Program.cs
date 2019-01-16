@@ -10,7 +10,7 @@ namespace ll_kth_from_end
             
         }
 
-        public int KthFromEnd(int k, LinkedList linkedList)
+        public static int KthFromEnd(int k, LinkedList linkedList)
         {
             int counter = 0;
             linkedList.Current = linkedList.Head;
@@ -20,11 +20,19 @@ namespace ll_kth_from_end
                 counter++;
             }
             linkedList.Current = linkedList.Head;
-            for (int i = 0; i < counter - k; i++)
+            try
             {
-                linkedList.Current = linkedList.Current.Next;
+                for (int i = 0; i < counter - k; i++)
+                {
+                    linkedList.Current = linkedList.Current.Next;
+                }
+                return linkedList.Current.Value;
             }
-            return linkedList.Current.Value;
+            catch (Exception)
+            {
+                Console.WriteLine("Exception");
+                throw;
+            }
         }
     }
 }
