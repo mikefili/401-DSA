@@ -30,7 +30,7 @@ namespace ll_kth_from_end
             }
             catch (Exception)
             {
-                Console.WriteLine("Exception");
+                Console.Write("Exception");
                 throw;
             }
         }
