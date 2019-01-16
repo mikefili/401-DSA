@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Linked_List">
+      <HintPath>..\..\..\..\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\Linked_List.dll</HintPath>
+    </Reference>
+    <Reference Include="ll_kth_from_end">
+      <HintPath>..\ll_kth_from_end\bin\Debug\netcoreapp2.2\ll_kth_from_end.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

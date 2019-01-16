@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Reference Include="Linked_List">
-      <HintPath>bin\Debug\netcoreapp2.2\Linked_List.dll</HintPath>
+      <HintPath>..\..\..\..\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\Linked_List.dll</HintPath>
     </Reference>
   </ItemGroup>
 

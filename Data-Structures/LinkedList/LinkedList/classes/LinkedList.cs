@@ -67,6 +67,7 @@ namespace Linked_List.classes
         /// <param name="value">value to be added to list</param>
         public void Append(int value)
         {
+            Current = Head;
             while (Current.Next != null)
             {
                 Current = Current.Next;
@@ -109,7 +110,7 @@ namespace Linked_List.classes
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
-            if (Current.Next.Value == value)
+            if (Current.Value == value)
             {
                 Insert(newValue);
                 return;
