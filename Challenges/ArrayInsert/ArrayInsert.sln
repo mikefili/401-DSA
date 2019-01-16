@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayShift", "ArrayInsert\ArrayShift.csproj", "{FD9356D0-7274-4CEA-9C0C-A1EEA6C87A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest1", "UnitTest1\UnitTest1.csproj", "{56AAA5E4-9266-4A05-AA2D-75277DF5FD66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD9356D0-7274-4CEA-9C0C-A1EEA6C87A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9356D0-7274-4CEA-9C0C-A1EEA6C87A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9356D0-7274-4CEA-9C0C-A1EEA6C87A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9356D0-7274-4CEA-9C0C-A1EEA6C87A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AAA5E4-9266-4A05-AA2D-75277DF5FD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AAA5E4-9266-4A05-AA2D-75277DF5FD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AAA5E4-9266-4A05-AA2D-75277DF5FD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AAA5E4-9266-4A05-AA2D-75277DF5FD66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F49E3138-03E8-4105-ACA6-1F29E16DCF7D}
+	EndGlobalSection
+EndGlobal
