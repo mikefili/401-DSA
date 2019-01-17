@@ -25,7 +25,7 @@ namespace Linked_List.classes
         /// check to see if any nodes in the list contain a specific value
         /// </summary>
         /// <param name="value">value being checked for</param>
-        /// <returns></returns>
+        /// <returns></returns> 
         public bool Includes(int value)
         {
             Current = Head; // reset to Head node so that we start at the front of the LL
