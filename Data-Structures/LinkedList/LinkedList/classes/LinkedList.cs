@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Linked_List.classes
+namespace Linked_List
 {
     public class LinkedList
     {
@@ -110,11 +110,6 @@ namespace Linked_List.classes
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
-            if (Current.Value == value)
-            {
-                Insert(newValue);
-                return;
-            }
             while (Current.Next != null)
             {
                 if (Current.Value == value)

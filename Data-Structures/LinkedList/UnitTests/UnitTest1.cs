@@ -1,6 +1,5 @@
 using System;
 using Linked_List;
-using Linked_List.classes;
 using Xunit;
 
 namespace UnitTests
@@ -95,12 +94,12 @@ namespace UnitTests
         public void CanInsertAfter()
         {
             LinkedList list = new LinkedList();
+            list.Insert(8);
+            list.Insert(4);
             list.Insert(5);
-            list.Insert(10);
-            list.Insert(15);
-            list.InsertAfter(10, 8);
+            list.InsertAfter(5, 99);
 
-            int[] expectedValues = { 15, 10, 8, 5 };
+            int[] expectedValues = { 5, 99, 4, 8 };
             int[] actualValues = new int[expectedValues.Length];
             int i = 0;
             list.Current = list.Head;
