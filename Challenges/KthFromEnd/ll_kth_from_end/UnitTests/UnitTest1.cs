@@ -1,5 +1,5 @@
 using System;
-using Linked_List.classes;
+using Linked_List;
 using ll_kth_from_end;
 using Xunit;
 
@@ -17,7 +17,7 @@ namespace UnitTests
             linkedList.Insert(20);
             linkedList.Insert(25);
             linkedList.Insert(30);
-            Assert.Equal(15, Program.KthFromEnd(2, linkedList));
+            Assert.Equal(15, ProgramKth.KthFromEnd(2, linkedList));
         }
 
         [Fact]
@@ -28,11 +28,18 @@ namespace UnitTests
             {
                 linkedList.Insert(1000 - i);
             }
-            Assert.Equal(500, Program.KthFromEnd(500, linkedList));
+            Assert.Equal(500, ProgramKth.KthFromEnd(500, linkedList));
         }
 
         [Fact]
-        public void CanFindZeroNodeValue()
+        public void CanThrowNullReferenceExceptionOnEmptyLinkedList()
+        {
+            LinkedList linkedList = new LinkedList();
+            Assert.Throws<NullReferenceException>(() => ProgramKth.KthFromEnd(5, linkedList));
+        }
+
+        [Fact]
+        public void CanThrowExceptionOnKLargerThanLinkedList()
         {
             LinkedList linkedList = new LinkedList();
             linkedList.Insert(5);
@@ -41,7 +48,7 @@ namespace UnitTests
             linkedList.Insert(20);
             linkedList.Insert(25);
             linkedList.Insert(30);
-            Assert.Equal(5, Program.KthFromEnd(0, linkedList));
+            Assert.Throws<Exception>(() => ProgramKth.KthFromEnd(10, linkedList));
         }
     }
 }
