@@ -7,9 +7,15 @@ namespace ll_kth_from_end
     {
         static void Main(string[] args)
         {
-            
+        
         }
 
+        /// <summary>
+        /// Find the value of the Kth node from the end of a linked list & return it
+        /// </summary>
+        /// <param name="k">position of desired node</param>
+        /// <param name="linkedList">linked list you wish to find the Kth node in</param>
+        /// <returns>value of Kth node</returns>
         public static int KthFromEnd(int k, LinkedList linkedList)
         {
             int counter = 1;

@@ -38,6 +38,17 @@ namespace UnitTests
             Assert.Throws<NullReferenceException>(() => ProgramKth.KthFromEnd(5, linkedList));
         }
 
-        
+        [Fact]
+        public void CanThrowExceptionOnKLargerThanLinkedList()
+        {
+            LinkedList linkedList = new LinkedList();
+            linkedList.Insert(5);
+            linkedList.Insert(10);
+            linkedList.Insert(15);
+            linkedList.Insert(20);
+            linkedList.Insert(25);
+            linkedList.Insert(30);
+            Assert.Throws<Exception>(() => ProgramKth.KthFromEnd(10, linkedList));
+        }
     }
 }
