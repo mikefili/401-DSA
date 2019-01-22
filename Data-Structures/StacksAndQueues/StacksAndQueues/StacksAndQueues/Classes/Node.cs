@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnitTests_StacksAndQueues.Classes
+namespace StacksAndQueues.Classes
 {
     public class Node
     {

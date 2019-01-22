@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnitTests_StacksAndQueues.Classes
+namespace StacksAndQueues.Classes
 {
     public class Stack
     {
@@ -40,7 +40,10 @@ namespace UnitTests_StacksAndQueues.Classes
         /// </summary>
         public int Pop()
         {
-
+            Node temp = Top;
+            Top = Top.Next;
+            temp.Next = null;
+            return temp.Value;
         }
     }
 }
