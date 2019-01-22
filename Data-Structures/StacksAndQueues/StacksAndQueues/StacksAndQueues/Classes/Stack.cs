@@ -8,10 +8,20 @@ namespace UnitTests_StacksAndQueues.Classes
     {
         public Node Top { get; set; }
 
+        public Stack(Node node)
+        {
+            Top = node;
+        }
+
         public void Push(int val)
         {
             Node node = new Node(val);
             node = Top;
+        }
+
+        public void Pop()
+        {
+
         }
     }
 }
