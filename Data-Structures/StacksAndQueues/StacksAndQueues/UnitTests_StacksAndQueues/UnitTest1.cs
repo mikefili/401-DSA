@@ -74,5 +74,14 @@ namespace UnitTests_StacksAndQueues
             Queue queue = new Queue();
             Assert.Null(queue.Front);
         }
+
+        [Fact]
+        public void CanInstantiateQueueWithOneNode()
+        {
+            Node node = new Node(1);
+            Queue queue = new Queue(node);
+            int expected = 1;
+            Assert.Equal(expected, queue.Front.Value);
+        }
     }
 }
