@@ -1,11 +1,21 @@
 using StacksAndQueues.Classes;
 using System;
 using Xunit;
+using System.Collections.Generic;
 
 namespace UnitTests_StacksAndQueues
 {
     public class UnitTest1
     {
+        [Fact]
+        public void CanInstantiateStackWithOneNode()
+        {
+            Node node = new Node(1);
+            Stack stack = new Stack(node);
+            int expected = 1;
+            Assert.Equal(expected, stack.Top.Value);
+        }
+
         [Fact]
         public void CanPushNodeToStack()
         {
@@ -14,5 +24,7 @@ namespace UnitTests_StacksAndQueues
             int expected = 1;
             Assert.Equal(expected, stack.Top.Value);
         }
+
+        
     }
 }
