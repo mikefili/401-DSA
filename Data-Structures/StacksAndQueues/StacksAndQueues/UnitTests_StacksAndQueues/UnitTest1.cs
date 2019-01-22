@@ -42,5 +42,12 @@ namespace UnitTests_StacksAndQueues
             int expected = 3;
             Assert.Equal(expected, stack.Pop().Value);
         }
+
+        [Fact]
+        public void CannotPopNodeFromEmptyStack()
+        {
+            Stack stack = new Stack();
+            Assert.Null(stack.Pop());
+        }
     }
 }
