@@ -8,6 +8,13 @@ namespace UnitTests_StacksAndQueues
     public class UnitTest1
     {
         [Fact]
+        public void CanInstantiateStackWithNoNodes()
+        {
+            Stack stack = new Stack();
+            Assert.Null(stack.Top);
+        }
+
+        [Fact]
         public void CanInstantiateStackWithOneNode()
         {
             Node node = new Node(1);
