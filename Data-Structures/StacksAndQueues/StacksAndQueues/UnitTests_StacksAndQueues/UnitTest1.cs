@@ -58,5 +58,12 @@ namespace UnitTests_StacksAndQueues
             int expected = 1;
             Assert.Equal(expected, stack.Peek().Value);
         }
+
+        [Fact]
+        public void CannotPeekInEmptyStack()
+        {
+            Stack stack = new Stack();
+            Assert.Null(stack.Peek());
+        }
     }
 }
