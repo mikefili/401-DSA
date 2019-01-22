@@ -53,9 +53,11 @@ namespace UnitTests_StacksAndQueues
         [Fact]
         public void CanPeekAtTopNode()
         {
-            Node node = new Node(1);
-            Stack stack = new Stack(node);
-            int expected = 1;
+            Stack stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            int expected = 3;
             Assert.Equal(expected, stack.Peek().Value);
         }
 
@@ -64,6 +66,13 @@ namespace UnitTests_StacksAndQueues
         {
             Stack stack = new Stack();
             Assert.Null(stack.Peek());
+        }
+
+        [Fact]
+        public void CanInstantiateQueueWithNoNodes()
+        {
+            Queue queue = new Queue();
+            Assert.Null(queue.Front);
         }
     }
 }

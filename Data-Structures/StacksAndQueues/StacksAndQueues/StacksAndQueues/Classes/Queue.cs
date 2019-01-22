@@ -9,6 +9,11 @@ namespace StacksAndQueues.Classes
         public Node Front { get; set; }
         public Node Rear { get; set; }
 
+        public Queue()
+        {
+
+        }
+
         /// <summary>
         /// Instantiate a new queue with a front & read node
         /// </summary>
