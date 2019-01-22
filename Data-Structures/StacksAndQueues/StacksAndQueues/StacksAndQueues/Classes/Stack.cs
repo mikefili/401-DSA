@@ -45,5 +45,14 @@ namespace StacksAndQueues.Classes
             temp.Next = null;
             return temp.Value;
         }
+
+        /// <summary>
+        /// Returns the value of the node located on the top of the stack
+        /// </summary>
+        /// <returns>the value of Top</returns>
+        public Node Peek()
+        {
+            return Top;
+        }
     }
 }
