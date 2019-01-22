@@ -9,6 +9,11 @@ namespace StacksAndQueues.Classes
         public Node Front { get; set; }
         public Node Rear { get; set; }
 
+        public Queue()
+        {
+
+        }
+
         /// <summary>
         /// Instantiate a new queue with a front & read node
         /// </summary>
@@ -25,17 +30,33 @@ namespace StacksAndQueues.Classes
         /// <param name="val">value of node to be added</param>
         public void Enqueue(int val)
         {
-            Node node = new Node(val);
-            Rear.Next = node;
-            Rear = node;
+            if (Front == null)
+            {
+                Node node = new Node(val);
+                Front = node;
+                Rear = node;
+            }
+            else
+            {
+                Node node = new Node(val);
+                Rear.Next = node;
+                Rear = node;
+            }
         }
 
         public Node Dequeue()
         {
-            Node temp = Front;
-            Front = Front.Next;
-            temp.Next = null;
-            return temp;
+            try
+            {
+                Node temp = Front;
+                Front = Front.Next;
+                temp.Next = null;
+                return temp;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public Node Peek()

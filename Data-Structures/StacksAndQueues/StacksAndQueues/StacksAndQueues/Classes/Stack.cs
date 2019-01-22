@@ -32,7 +32,8 @@ namespace StacksAndQueues.Classes
         public void Push(int val)
         {
             Node node = new Node(val);
-            node = Top;
+            node.Next = Top;
+            Top = node;
         }
 
         /// <summary>
@@ -40,10 +41,17 @@ namespace StacksAndQueues.Classes
         /// </summary>
         public Node Pop()
         {
-            Node temp = Top;
-            Top = Top.Next;
-            temp.Next = null;
-            return temp;
+            try
+            {
+                Node temp = Top;
+                Top = Top.Next;
+                temp.Next = null;
+                return temp;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         /// <summary>
