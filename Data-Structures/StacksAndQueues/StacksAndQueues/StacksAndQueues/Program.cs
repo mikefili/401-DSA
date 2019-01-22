@@ -14,7 +14,6 @@ namespace StacksAndQueues
             stack.Push(3);
             stack.Push(4);
             stack.Push(5);
-            
         }
     }
 }

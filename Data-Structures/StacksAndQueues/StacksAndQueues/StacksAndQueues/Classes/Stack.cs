@@ -38,12 +38,12 @@ namespace StacksAndQueues.Classes
         /// <summary>
         /// Removes a node from the top of the stack and returns its value
         /// </summary>
-        public int Pop()
+        public Node Pop()
         {
             Node temp = Top;
             Top = Top.Next;
             temp.Next = null;
-            return temp.Value;
+            return temp;
         }
 
         /// <summary>
