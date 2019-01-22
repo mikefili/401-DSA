@@ -32,6 +32,10 @@ namespace UnitTests_StacksAndQueues
             Assert.Equal(expected, stack.Top.Value);
         }
 
-        
+        [Fact]
+        public void Name()
+        {
+
+        }
     }
 }

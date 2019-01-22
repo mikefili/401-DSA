@@ -41,10 +41,18 @@ namespace StacksAndQueues.Classes
         /// </summary>
         public Node Pop()
         {
-            Node temp = Top;
-            Top = Top.Next;
-            temp.Next = null;
-            return temp;
+            try
+            {
+                Node temp = Top;
+                Top = Top.Next;
+                temp.Next = null;
+                return temp;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("There was an exception!");
+                throw;
+            }
         }
 
         /// <summary>

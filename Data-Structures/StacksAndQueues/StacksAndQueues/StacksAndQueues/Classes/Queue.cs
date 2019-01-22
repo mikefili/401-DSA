@@ -32,10 +32,18 @@ namespace StacksAndQueues.Classes
 
         public Node Dequeue()
         {
-            Node temp = Front;
-            Front = Front.Next;
-            temp.Next = null;
-            return temp;
+            try
+            {
+                Node temp = Front;
+                Front = Front.Next;
+                temp.Next = null;
+                return temp;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("There was an exception!");
+                throw;
+            }
         }
 
         public Node Peek()
