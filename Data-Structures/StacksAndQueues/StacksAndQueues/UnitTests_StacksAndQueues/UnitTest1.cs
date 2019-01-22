@@ -83,5 +83,14 @@ namespace UnitTests_StacksAndQueues
             int expected = 1;
             Assert.Equal(expected, queue.Front.Value);
         }
+
+        [Fact]
+        public void CanEnqueueNodeToEmptyQueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(1);
+            int expected = 1;
+            Assert.Equal(expected, queue.Rear.Value);
+        }
     }
 }
