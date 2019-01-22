@@ -49,5 +49,14 @@ namespace UnitTests_StacksAndQueues
             Stack stack = new Stack();
             Assert.Null(stack.Pop());
         }
+
+        [Fact]
+        public void CanPeekAtTopNode()
+        {
+            Node node = new Node(1);
+            Stack stack = new Stack(node);
+            int expected = 1;
+            Assert.Equal(expected, stack.Peek().Value);
+        }
     }
 }
