@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Linked_List.classes
+namespace Linked_List
 {
     public class LinkedList
     {
@@ -25,7 +25,7 @@ namespace Linked_List.classes
         /// check to see if any nodes in the list contain a specific value
         /// </summary>
         /// <param name="value">value being checked for</param>
-        /// <returns></returns>
+        /// <returns></returns> 
         public bool Includes(int value)
         {
             Current = Head; // reset to Head node so that we start at the front of the LL
@@ -110,11 +110,6 @@ namespace Linked_List.classes
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
-            if (Current.Value == value)
-            {
-                Insert(newValue);
-                return;
-            }
             while (Current.Next != null)
             {
                 if (Current.Value == value)
