@@ -50,8 +50,7 @@ namespace StacksAndQueues.Classes
             }
             catch (Exception)
             {
-                Console.WriteLine("There was an exception!");
-                throw;
+                return null;
             }
         }
 

@@ -33,9 +33,14 @@ namespace UnitTests_StacksAndQueues
         }
 
         [Fact]
-        public void Name()
+        public void CanPopNodeFromStack()
         {
-
+            Stack stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            int expected = 3;
+            Assert.Equal(expected, stack.Pop().Value);
         }
     }
 }
