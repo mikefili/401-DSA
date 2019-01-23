@@ -46,6 +46,14 @@ namespace QueueWithStacks.Classes
             Node temp4 = tempStack.Pop();
             Front.Push(temp4.Value);
         }
+
+        /// <summary>
+        /// pop off front node to dequeue
+        /// </summary>
+        public void Dequeue()
+        {
+            Node temp = Front.Pop();
+        }
     }
 
     /// <summary>
