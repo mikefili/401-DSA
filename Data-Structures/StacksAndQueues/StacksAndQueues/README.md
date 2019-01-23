@@ -11,18 +11,24 @@
 
 ## Approach & Efficiency
 ### Stack:
-- Push:	Time = O(1)
-		Space = O(n)
-- Pop:	Time = O(1)
-		Space = O(1)
-- Peek:	Time = O(n)
+- Push:
+	- Time = O(1)
+	- Space = O(n)
+- Pop:
+	- Time = O(1)
+	- Space = O(1)
+- Peek:
+	- Time = O(n)
 
 ### Queue:
-- Enqueue:	Time = O(1)
-			Space = O(1)
-- Dequeue:	Time = O(1)
-			Space = O(1)
-- Peek:		Time = O(1)
+- Enqueue:
+	- Time = O(1)
+	- Space = O(1)
+- Dequeue:
+	- Time = O(1)
+	- Space = O(1)
+- Peek:	
+	- Time = O(1)
 
 
 ## API
