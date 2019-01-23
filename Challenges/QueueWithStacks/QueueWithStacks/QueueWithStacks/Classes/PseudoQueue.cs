@@ -34,6 +34,11 @@ namespace QueueWithStacks.Classes
         {
             Top = node;
         }
+
+        public Stack()
+        {
+
+        }
     }
 
     /// <summary>
