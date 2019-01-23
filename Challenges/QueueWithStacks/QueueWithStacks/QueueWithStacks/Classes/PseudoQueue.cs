@@ -13,22 +13,43 @@ namespace QueueWithStacks.Classes
         /// </summary>
         public Stack Front { get; set; }
         public Stack Rear { get; set; }
+        
+    }
+
+    /// <summary>
+    /// create Stack class
+    /// </summary>
+    public class Stack
+    {
+        /// <summary>
+        /// set Top property
+        /// </summary>
+        public Node Top { get; set; }
 
         /// <summary>
-        /// create Node class
+        /// create stack with single node
         /// </summary>
-        public class Node
+        /// <param name="node">node</param>
+        public Stack(Node node)
         {
-            /// <summary>
-            /// set Value and Next properties
-            /// </summary>
-            public int Value { get; set; }
-            public Node Next { get; set; }
+            Top = node;
+        }
+    }
 
-            public Node(int value)
-            {
-                Value = value;
-            }
+    /// <summary>
+    /// create Node class
+    /// </summary>
+    public class Node
+    {
+        /// <summary>
+        /// set Value and Next properties
+        /// </summary>
+        public int Value { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int value)
+        {
+            Value = value;
         }
     }
 }
