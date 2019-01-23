@@ -51,7 +51,7 @@ namespace UnitTests_StacksAndQueues
         }
 
         [Fact]
-        public void CanPeekAtTopNode()
+        public void CanPeekAtTopNodeInStack()
         {
             Stack stack = new Stack();
             stack.Push(1);
@@ -135,6 +135,16 @@ namespace UnitTests_StacksAndQueues
             int[] expected = { 1, 2, 3 };
             int[] actual = {queue.Dequeue().Value, queue.Dequeue().Value, queue.Dequeue().Value};
             Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CanPeekAtTopNodeInQueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            Assert.Equal(1, queue.Peek().Value);
         }
     }
 }
