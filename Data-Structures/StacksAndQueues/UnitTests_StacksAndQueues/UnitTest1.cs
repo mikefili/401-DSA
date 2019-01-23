@@ -115,5 +115,14 @@ namespace UnitTests_StacksAndQueues
             queue.Dequeue();
             Assert.Equal(expected, queue.Front.Value);
         }
+
+        [Fact]
+        public void CannotDequeueFromEmptyQueue()
+        {
+            Queue queue = new Queue();
+            Assert.Null(queue.Dequeue());
+        }
+
+
     }
 }
