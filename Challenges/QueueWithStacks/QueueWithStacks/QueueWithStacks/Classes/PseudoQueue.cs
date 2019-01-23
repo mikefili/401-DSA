@@ -53,6 +53,18 @@ namespace QueueWithStacks.Classes
             node.Next = Top;
             Top = node;
         }
+
+        /// <summary>
+        /// "pop" top node off of stack
+        /// </summary>
+        /// <returns>top node</returns>
+        public Node Pop()
+        {
+            Node temp = Top;
+            Top = Top.Next;
+            temp.Next = null;
+            return temp;
+        }
     }
 
     /// <summary>
