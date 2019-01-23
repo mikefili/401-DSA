@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using QueueWithStacks;
+using QueueWithStacks.Classes;
 
 namespace UnitTests_StackWithQueues
 {
