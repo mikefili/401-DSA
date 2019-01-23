@@ -123,6 +123,18 @@ namespace UnitTests_StacksAndQueues
             Assert.Null(queue.Dequeue());
         }
 
-
+        [Fact]
+        public void CanDequeueMultipleNodesFromQueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(4);
+            queue.Enqueue(5);
+            int[] expected = { 1, 2, 3 };
+            int[] actual = {queue.Dequeue().Value, queue.Dequeue().Value, queue.Dequeue().Value};
+            Assert.Equal(expected, actual);
+        }
     }
 }
