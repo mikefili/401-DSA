@@ -27,7 +27,7 @@ namespace QueueWithStacks.Classes
         public Node Top { get; set; }
 
         /// <summary>
-        /// create stack with single node
+        /// instantiate a stack with a single node
         /// </summary>
         /// <param name="node">node</param>
         public Stack(Node node)
@@ -35,9 +35,23 @@ namespace QueueWithStacks.Classes
             Top = node;
         }
 
+        /// <summary>
+        /// instantiate an empty stack
+        /// </summary>
         public Stack()
         {
 
+        }
+
+        /// <summary>
+        /// instantiate a new node on top of the stack
+        /// </summary>
+        /// <param name="value">value on new node</param>
+        public void Push(int value)
+        {
+            Node node = new Node(value);
+            node.Next = Top;
+            Top = node;
         }
     }
 
