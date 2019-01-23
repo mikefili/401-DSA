@@ -103,5 +103,17 @@ namespace UnitTests_StacksAndQueues
             int expected = 3;
             Assert.Equal(expected, queue.Rear.Value);
         }
+
+        [Fact]
+        public void CanDequeueNodeFromQueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            int expected = 2;
+            queue.Dequeue();
+            Assert.Equal(expected, queue.Front.Value);
+        }
     }
 }

@@ -53,10 +53,11 @@ namespace StacksAndQueues.Classes
                 temp.Next = null;
                 return temp;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return null;
+                Console.WriteLine(e.Message);
             }
+            return null;
         }
 
         public Node Peek()
