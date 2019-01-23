@@ -7,3 +7,4 @@
 3.  [Data Structure: Linked List](Data-Structures/LinkedList)
 4.  [Challenge: Kth Value in Linked List](Challenges/KthFromEnd/ll_kth_from_end)
 5.  [Challenge: Linked List Merge](Challenges/LLMerge/ll_merge)
+6.  [Data Structure: Stacks & Queues](Data-Structures/StacksAndQueues)
