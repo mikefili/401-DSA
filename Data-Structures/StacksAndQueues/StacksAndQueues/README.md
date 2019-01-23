@@ -3,7 +3,11 @@
 - A queue is a data structure that also consists of Nodes. Each Node references the nodes in front and in rear of itself.
 
 ## Challenge
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next node. Create a Stack class that has a top property. This object should be aware of a default empty value assigned to top. Define a method called push, a method called pop, and a method called peek. Create a Queue class that has a front propety and a rear property. For the Queue class, create a enqueue method, dequeue method and a peek method.
+- Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+- Create a Stack class that has a top property. This object should be aware of a default empty value assigned to top.
+- Define a method called push, a method called pop, and a method called peek.
+- Create a Queue class that has a front propety and a rear property.
+- For the Queue class, create a enqueue method, dequeue method and a peek method.
 
 ## Approach & Efficiency
 ### Stack:
