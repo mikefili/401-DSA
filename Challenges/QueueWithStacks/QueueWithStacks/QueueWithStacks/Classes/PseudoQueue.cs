@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using 
 using System.Text;
 
 namespace QueueWithStacks.Classes
@@ -13,7 +12,40 @@ namespace QueueWithStacks.Classes
         /// </summary>
         public Stack Front { get; set; }
         public Stack Rear { get; set; }
-        
+
+        /// <summary>
+        /// instantiate new pseudoqueue with a Front & Rear stack
+        /// </summary>
+        /// <param name="stack">incoming stack</param>
+        public void PsQueue(Stack stack)
+        {
+            Front = stack;
+            Rear = stack;
+        }
+
+        /// <summary>
+        /// inserts value into the pseudoqueue using FIFO approach
+        /// </summary>
+        /// <param name="value">value of node to enqueue</param>
+        public void Enqueue(int value)
+        {
+            Stack tempStack = new Stack();
+            while (Front.Top.Next != null)
+            {
+                Node temp1 = Front.Pop();
+                tempStack.Push(temp1.Value);
+            }
+            Node temp2 = Front.Pop();
+            tempStack.Push(temp2.Value);
+            Front.Push(value);
+            while (tempStack.Top.Next != null)
+            {
+                Node temp3 = tempStack.Pop();
+                Front.Push(temp3.Value);
+            }
+            Node temp4 = tempStack.Pop();
+            Front.Push(temp4.Value);
+        }
     }
 
     /// <summary>
