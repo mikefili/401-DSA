@@ -146,5 +146,12 @@ namespace UnitTests_StacksAndQueues
             queue.Enqueue(3);
             Assert.Equal(1, queue.Peek().Value);
         }
+
+        [Fact]
+        public void CannotPeekInEmptyQueue()
+        {
+            Queue queue = new Queue();
+            Assert.Null(queue.Peek());
+        }
     }
 }
