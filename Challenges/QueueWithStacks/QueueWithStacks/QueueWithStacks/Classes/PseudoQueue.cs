@@ -65,6 +65,15 @@ namespace QueueWithStacks.Classes
             temp.Next = null;
             return temp;
         }
+
+        /// <summary>
+        /// "peek" at top node on stack
+        /// </summary>
+        /// <returns>top node</returns>
+        public Node Peek()
+        {
+            return Top;
+        }
     }
 
     /// <summary>
