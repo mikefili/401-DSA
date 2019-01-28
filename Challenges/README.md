@@ -9,4 +9,4 @@ a white board image of my approach in addition to the actual code implementation
 2.  [Challenge: Array Binary Search](../Challenges/BinarySearch)
 3.  [Challenge: Kth Value in Linked List](../Challenges/KthFromEnd/ll_kth_from_end)
 4.  [Challenge: Linked List Merge](../Challenges/LLMerge/ll_merge)
-5.  [Challenge: StackWithQueues](../Challenges/StacksWithQueues/stacks_with_queues)
+5.  [Challenge: QueueWithStacks](../Challenges/QueueWithStacks/queue_with_stacks)
