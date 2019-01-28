@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Trees.Classes
 {
@@ -13,7 +14,7 @@ namespace Trees.Classes
             bT.root.LeftChild.LeftChild = new Node(20);
             bT.root.LeftChild.RightChild = new Node(25);
 
-            int[] results = bT.PreOrder(bT.root);
+            List<int> results = bT.PreOrder(bT.root);
             Console.WriteLine(results);
         }
     }

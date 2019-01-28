@@ -7,7 +7,7 @@ namespace Trees.Classes
     public class BinaryTree
     {
         public Node root { get; set; }
-        public List<int> OrderedArray { get; set; }
+        public List<int> OrderedList { get; set; }
 
         public BinaryTree()
         {
@@ -16,53 +16,56 @@ namespace Trees.Classes
 
         public int[] PreOrder(Node root)
         {
+            BinaryTree binaryTree = new BinaryTree();
 
-            OrderedArray.Add(root.Value);
+            OrderedList.Add(root.Value);
             if (root.LeftChild != null)
             {
-                InOrder(root.LeftChild);
-                OrderedArray.Add(root.LeftChild.Value);
+                PreOrder(root.LeftChild);
+                OrderedList.Add(root.LeftChild.Value);
             }
             if (root.RightChild != null)
             {
-                InOrder(root.RightChild);
-                OrderedArray.Add(root.RightChild.Value);
+                PreOrder(root.RightChild);
+                OrderedList.Add(root.RightChild.Value);
             }
-            return OrderedArray.ToArray();
+            return OrderedList.ToArray();
         }
 
         public int[] InOrder(Node root)
         {
             BinaryTree binaryTree = new BinaryTree();
+
             if (root.LeftChild != null)
             {
                 InOrder(root.LeftChild);
-                OrderedArray.Add(root.LeftChild.Value);
+                OrderedList.Add(root.LeftChild.Value);
             }
-            OrderedArray.Add(root.Value);
+            OrderedList.Add(root.Value);
             if (root.RightChild != null)
             {
                 InOrder(root.RightChild);
-                OrderedArray.Add(root.RightChild.Value);
+                OrderedList.Add(root.RightChild.Value);
             }
-            return OrderedArray.ToArray();
+            return OrderedList.ToArray();
         }
 
         public int[] PostOrder(Node root)
         {
             BinaryTree binaryTree = new BinaryTree();
+
             if (root.LeftChild != null)
             {
-                InOrder(root.LeftChild);
-                OrderedArray.Add(root.LeftChild.Value);
+                PostOrder(root.LeftChild);
+                OrderedList.Add(root.LeftChild.Value);
             }
             if (root.RightChild != null)
             {
-                InOrder(root.RightChild);
-                OrderedArray.Add(root.RightChild.Value);
+                PostOrder(root.RightChild);
+                OrderedList.Add(root.RightChild.Value);
             }
-            OrderedArray.Add(root.Value);
-            return OrderedArray.ToArray();
+            OrderedList.Add(root.Value);
+            return OrderedList.ToArray();
         }
     }
 }
