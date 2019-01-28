@@ -13,5 +13,12 @@ namespace UnitTests_MultiBracketValidation
             string testInput = "({[]})";
             Assert.True(Program.MultiBracketValidation(testInput));
         }
+
+        [Fact]
+        public void CanInvalidateNonMatchingBrackets()
+        {
+            string testInput = "({[})";
+            Assert.False(Program.MultiBracketValidation(testInput));
+        }
     }
 }
