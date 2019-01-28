@@ -29,9 +29,9 @@ namespace Trees.Classes
         {
             if (root != null)
             {
-                PreOrder(root.LeftChild);
+                InOrder(root.LeftChild);
                 OrderedArray.Add(root.Value);
-                PreOrder(root.RightChild);
+                InOrder(root.RightChild);
             }
             return OrderedArray.ToArray();
         }
@@ -40,8 +40,8 @@ namespace Trees.Classes
         {
             if (root != null)
             {
-                PreOrder(root.LeftChild);
-                PreOrder(root.RightChild);
+                PostOrder(root.LeftChild);
+                PostOrder(root.RightChild);
                 OrderedArray.Add(root.Value);
             }
             return OrderedArray.ToArray();
