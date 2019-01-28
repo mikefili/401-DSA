@@ -20,5 +20,12 @@ namespace UnitTests_MultiBracketValidation
             string testInput = "({[})";
             Assert.False(Program.MultiBracketValidation(testInput));
         }
+
+        [Fact]
+        public void CanInvalidateEmptyStringInput()
+        {
+            string testInput = "";
+            Assert.False(Program.MultiBracketValidation(testInput));
+        }
     }
 }
