@@ -16,34 +16,52 @@ namespace Trees.Classes
 
         public int[] PreOrder(Node root)
         {
-            if (root != null)
+
+            OrderedArray.Add(root.Value);
+            if (root.LeftChild != null)
             {
-                OrderedArray.Add(root.Value);
-                PreOrder(root.LeftChild);
-                PreOrder(root.RightChild);
+                InOrder(root.LeftChild);
+                OrderedArray.Add(root.LeftChild.Value);
+            }
+            if (root.RightChild != null)
+            {
+                InOrder(root.RightChild);
+                OrderedArray.Add(root.RightChild.Value);
             }
             return OrderedArray.ToArray();
         }
 
         public int[] InOrder(Node root)
         {
-            if (root != null)
+            BinaryTree binaryTree = new BinaryTree();
+            if (root.LeftChild != null)
             {
                 InOrder(root.LeftChild);
-                OrderedArray.Add(root.Value);
+                OrderedArray.Add(root.LeftChild.Value);
+            }
+            OrderedArray.Add(root.Value);
+            if (root.RightChild != null)
+            {
                 InOrder(root.RightChild);
+                OrderedArray.Add(root.RightChild.Value);
             }
             return OrderedArray.ToArray();
         }
 
         public int[] PostOrder(Node root)
         {
-            if (root != null)
+            BinaryTree binaryTree = new BinaryTree();
+            if (root.LeftChild != null)
             {
-                PostOrder(root.LeftChild);
-                PostOrder(root.RightChild);
-                OrderedArray.Add(root.Value);
+                InOrder(root.LeftChild);
+                OrderedArray.Add(root.LeftChild.Value);
             }
+            if (root.RightChild != null)
+            {
+                InOrder(root.RightChild);
+                OrderedArray.Add(root.RightChild.Value);
+            }
+            OrderedArray.Add(root.Value);
             return OrderedArray.ToArray();
         }
     }
