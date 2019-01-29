@@ -18,5 +18,29 @@ namespace FizzBuzzTree
             node.RightChild.LeftChild = new Node(10);
             node.RightChild.RightChild = new Node(15);
         }
+
+        public static object[] FizzBuzzTree(Node root)
+        {
+            try
+            {
+                if ((int)root.Value % 5 == 0 && (int)root.Value % 3 == 0)
+                {
+                    root.Value = "FizzBuzz";
+                }
+                else if ((int)root.Value % 3 == 0)
+                {
+                    root.Value = "Fizz";
+                }
+                else if ((int)root.Value % 5 == 0)
+                {
+                    root.Value = "Buzz";
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ListArray.ToArray();
+        }
     }
 }
