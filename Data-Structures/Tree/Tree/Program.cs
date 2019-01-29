@@ -19,6 +19,7 @@ namespace Trees.Classes
             BinaryTree bt2 = new BinaryTree(node);
 
             object[] result1 = bt1.PreOrder(node);
+            Console.Write("PreOrder Tree: ");
             foreach (object item in result1)
             {
                 Console.Write($"[{item}]");
@@ -27,6 +28,14 @@ namespace Trees.Classes
             Console.WriteLine();
             bt1.ListArray.Clear();
 
+            object[] result2 = bt1.InOrder(node);
+            Console.Write("InOrder Tree: ");
+            foreach (object item in result2)
+            {
+                Console.Write($"[{item}]");
+            }
+
+            Console.WriteLine();
         }
     }
 }
