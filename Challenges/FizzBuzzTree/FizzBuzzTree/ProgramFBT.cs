@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FizzBuzzTree
 {
-    public class Program
+    public class ProgramFBT
     {
         public static List<object> ListArray = new List<object>();
 
@@ -17,13 +17,20 @@ namespace FizzBuzzTree
             node.RightChild = new Node(8);
             node.RightChild.LeftChild = new Node(10);
             node.RightChild.RightChild = new Node(15);
+
+            object[] FBT = FizzBuzzTree(node);
+            foreach (object item in FBT)
+            {
+                Console.Write($"[{item}] ");
+            }
+            Console.WriteLine();
         }
 
         public static object[] FizzBuzzTree(Node root)
         {
             try
             {
-                if ((int)root.Value % 5 == 0 && (int)root.Value % 3 == 0)
+                if ((int)root.Value % 15 == 0)
                 {
                     root.Value = "FizzBuzz";
                 }
@@ -34,6 +41,15 @@ namespace FizzBuzzTree
                 else if ((int)root.Value % 5 == 0)
                 {
                     root.Value = "Buzz";
+                }
+                ListArray.Add(root.Value);
+                if (root.LeftChild != null)
+                {
+                    FizzBuzzTree(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    FizzBuzzTree(root.RightChild);
                 }
             }
             catch (Exception e)
