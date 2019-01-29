@@ -33,5 +33,14 @@ namespace UnitTests_FizzBuzzTree
             object[] FBT = ProgramFBT.FizzBuzzTree(node);
             Assert.Equal("FizzBuzz", FBT[0]);
         }
+
+        [Fact]
+        public void InapplicableNodeReturnsUnchangedValue()
+        {
+            ProgramFBT.ListArray.Clear();
+            Node node = new Node(8);
+            object[] FBT = ProgramFBT.FizzBuzzTree(node);
+            Assert.Equal(8, FBT[0]);
+        }
     }
 }
