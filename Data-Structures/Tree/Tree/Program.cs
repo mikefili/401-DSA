@@ -7,15 +7,26 @@ namespace Trees.Classes
     {
         static void Main(string[] args)
         {
-            BinaryTree bT = new BinaryTree();
-            bT.Root = new Node(5);
-            bT.Root.LeftChild = new Node(10);
-            bT.Root.RightChild = new Node(15);
-            bT.Root.LeftChild.LeftChild = new Node(20);
-            bT.Root.LeftChild.RightChild = new Node(25);
+            Node node = new Node(5);
+            node.LeftChild = new Node(10);
+            node.LeftChild.LeftChild = new Node(15);
+            node.LeftChild.RightChild = new Node(20);
+            node.RightChild = new Node(25);
+            node.RightChild.LeftChild = new Node(30);
+            node.RightChild.RightChild = new Node(35);
 
-            List<int> results = bT.PreOrder(bT.Root);
-            Console.WriteLine(results);
+            BinaryTree bt1 = new BinaryTree(node);
+            BinaryTree bt2 = new BinaryTree(node);
+
+            object[] result1 = bt1.PreOrder(node);
+            foreach (object item in result1)
+            {
+                Console.Write($"[{item}]");
+            }
+
+            Console.WriteLine();
+            bt1.ListArray.Clear();
+
         }
     }
 }
