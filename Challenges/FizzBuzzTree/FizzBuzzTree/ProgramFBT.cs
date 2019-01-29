@@ -30,7 +30,7 @@ namespace FizzBuzzTree
         {
             try
             {
-                if ((int)root.Value % 15 == 0)
+                if ((int)root.Value % 3 == 0 && (int)root.Value % 5 == 0)
                 {
                     root.Value = "FizzBuzz";
                 }
