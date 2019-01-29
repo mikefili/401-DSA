@@ -8,13 +8,13 @@ namespace Trees.Classes
         static void Main(string[] args)
         {
             BinaryTree bT = new BinaryTree();
-            bT.root = new Node(5);
-            bT.root.LeftChild = new Node(10);
-            bT.root.RightChild = new Node(15);
-            bT.root.LeftChild.LeftChild = new Node(20);
-            bT.root.LeftChild.RightChild = new Node(25);
+            bT.Root = new Node(5);
+            bT.Root.LeftChild = new Node(10);
+            bT.Root.RightChild = new Node(15);
+            bT.Root.LeftChild.LeftChild = new Node(20);
+            bT.Root.LeftChild.RightChild = new Node(25);
 
-            List<int> results = bT.PreOrder(bT.root);
+            List<int> results = bT.PreOrder(bT.Root);
             Console.WriteLine(results);
         }
     }
