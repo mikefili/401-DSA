@@ -37,24 +37,26 @@ namespace Trees.Classes
             {
                 Console.WriteLine(e.Message);
             }
-            
             return ListArray.ToArray();
         }
 
-        public int[] InOrder(Node root)
+        public object[] InOrder(Node root)
         {
-            BinaryTree binaryTree = new BinaryTree();
-
-            if (root.LeftChild != null)
+            try
             {
-                InOrder(root.LeftChild);
-                ListArray.Add(root.LeftChild.Value);
+                if (root.LeftChild != null)
+                {
+                    InOrder(root.LeftChild);
+                }
+                ListArray.Add(root.Value);
+                if (root.RightChild != null)
+                {
+                    InOrder(root.RightChild);
+                }
             }
-            ListArray.Add(root.Value);
-            if (root.RightChild != null)
+            catch (Exception e)
             {
-                InOrder(root.RightChild);
-                ListArray.Add(root.RightChild.Value);
+                Console.WriteLine(e.Message);
             }
             return ListArray.ToArray();
         }
