@@ -6,66 +6,80 @@ namespace Trees.Classes
 {
     public class BinaryTree
     {
-        public Node root { get; set; }
-        public List<int> OrderedList { get; set; }
+        public Node Root { get; set; }
+        public List<object> ListArray = new List<object>();
+
+        public BinaryTree(Node node)
+        {
+            Root = null;
+        }
 
         public BinaryTree()
         {
-            root = null;
+
         }
 
-        public int[] PreOrder(Node root)
+        public object[] PreOrder(Node root)
         {
-            BinaryTree binaryTree = new BinaryTree();
-
-            OrderedList.Add(root.Value);
-            if (root.LeftChild != null)
+            try
             {
-                PreOrder(root.LeftChild);
-                OrderedList.Add(root.LeftChild.Value);
+                ListArray.Add(root.Value);
+                if (root.LeftChild != null)
+                {
+                    PreOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PreOrder(root.RightChild);
+                }
             }
-            if (root.RightChild != null)
+            catch (Exception e)
             {
-                PreOrder(root.RightChild);
-                OrderedList.Add(root.RightChild.Value);
+                Console.WriteLine(e.Message);
             }
-            return OrderedList.ToArray();
+            return ListArray.ToArray();
         }
 
-        public int[] InOrder(Node root)
+        public object[] InOrder(Node root)
         {
-            BinaryTree binaryTree = new BinaryTree();
-
-            if (root.LeftChild != null)
+            try
             {
-                InOrder(root.LeftChild);
-                OrderedList.Add(root.LeftChild.Value);
+                if (root.LeftChild != null)
+                {
+                    InOrder(root.LeftChild);
+                }
+                ListArray.Add(root.Value);
+                if (root.RightChild != null)
+                {
+                    InOrder(root.RightChild);
+                }
             }
-            OrderedList.Add(root.Value);
-            if (root.RightChild != null)
+            catch (Exception e)
             {
-                InOrder(root.RightChild);
-                OrderedList.Add(root.RightChild.Value);
+                Console.WriteLine(e.Message);
             }
-            return OrderedList.ToArray();
+            return ListArray.ToArray();
         }
 
-        public int[] PostOrder(Node root)
+        public object[] PostOrder(Node root)
         {
-            BinaryTree binaryTree = new BinaryTree();
-
-            if (root.LeftChild != null)
+            try
             {
-                PostOrder(root.LeftChild);
-                OrderedList.Add(root.LeftChild.Value);
+                if (root.LeftChild != null)
+                {
+                    PostOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PostOrder(root.RightChild);
+                }
+                ListArray.Add(root.Value);
             }
-            if (root.RightChild != null)
+            catch (Exception e)
             {
-                PostOrder(root.RightChild);
-                OrderedList.Add(root.RightChild.Value);
+                Console.WriteLine(e.Message);
             }
-            OrderedList.Add(root.Value);
-            return OrderedList.ToArray();
+            return ListArray.ToArray();
         }
     }
 }
