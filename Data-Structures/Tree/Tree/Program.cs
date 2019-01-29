@@ -7,6 +7,7 @@ namespace Trees.Classes
     {
         static void Main(string[] args)
         {
+            // populate node values
             Node node = new Node(5);
             node.LeftChild = new Node(10);
             node.LeftChild.LeftChild = new Node(15);
@@ -15,26 +16,36 @@ namespace Trees.Classes
             node.RightChild.LeftChild = new Node(30);
             node.RightChild.RightChild = new Node(35);
 
-            BinaryTree bt1 = new BinaryTree(node);
-            BinaryTree bt2 = new BinaryTree(node);
+            // instantiate new binary tree
+            BinaryTree bt = new BinaryTree(node);
 
-            object[] result1 = bt1.PreOrder(node);
+            // traverse tree and print each node in PreOrder
+            object[] preOrder = bt.PreOrder(node);
             Console.Write("PreOrder Tree: ");
-            foreach (object item in result1)
+            foreach (object item in preOrder)
             {
                 Console.Write($"[{item}]");
             }
-
             Console.WriteLine();
-            bt1.ListArray.Clear();
+            bt.ListArray.Clear();
 
-            object[] result2 = bt1.InOrder(node);
+            // traverse tree and print each node in InOrder
+            object[] inOrder = bt.InOrder(node);
             Console.Write("InOrder Tree: ");
-            foreach (object item in result2)
+            foreach (object item in inOrder)
             {
                 Console.Write($"[{item}]");
             }
+            Console.WriteLine();
+            bt.ListArray.Clear();
 
+            // traverse tree and print each node in PostOrder
+            Object[] postOrder = bt.PostOrder(node);
+            Console.Write("PostOrder Tree: ");
+            foreach (var item in postOrder)
+            {
+                Console.Write($"[{item}]");
+            }
             Console.WriteLine();
         }
     }
