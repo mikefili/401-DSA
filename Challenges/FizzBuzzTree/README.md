@@ -15,4 +15,4 @@ Write a method called FizzBuzzTree which takes in a tree. Determine if each node
 The FizzBuzzTree method traverses a given binary tree recursively, and compares each node value to the given conditions. Once compared, each value is stored to a list collection before moving to the next node. Once traversal is complete, the list collection is converted to an array then returned.
 
 ## Solution
-![White Board Image](/whiteboard_img.PNG)
+![White Board Image](/whiteboard_img.png)
