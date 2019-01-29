@@ -61,21 +61,24 @@ namespace Trees.Classes
             return ListArray.ToArray();
         }
 
-        public int[] PostOrder(Node root)
+        public object[] PostOrder(Node root)
         {
-            BinaryTree binaryTree = new BinaryTree();
-
-            if (root.LeftChild != null)
+            try
             {
-                PostOrder(root.LeftChild);
-                ListArray.Add(root.LeftChild.Value);
+                if (root.LeftChild != null)
+                {
+                    PostOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PostOrder(root.RightChild);
+                }
+                ListArray.Add(root.Value);
             }
-            if (root.RightChild != null)
+            catch (Exception e)
             {
-                PostOrder(root.RightChild);
-                ListArray.Add(root.RightChild.Value);
+                Console.WriteLine(e.Message);
             }
-            ListArray.Add(root.Value);
             return ListArray.ToArray();
         }
     }
