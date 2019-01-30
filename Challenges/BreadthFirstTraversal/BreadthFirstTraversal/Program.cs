@@ -31,7 +31,7 @@ namespace BreadthFirstTraversal
             {
                 Node front = queue.Dequeue();
                 list.Add(front.Value);
-                Console.Write(front.Value);
+                Console.WriteLine($"{front.Value} ");
 
                 if (front.LeftChild != null)
                 {
