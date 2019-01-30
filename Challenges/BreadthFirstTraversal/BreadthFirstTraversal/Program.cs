@@ -32,6 +32,16 @@ namespace BreadthFirstTraversal
                 Node front = queue.Dequeue();
                 list.Add(front.Value);
                 Console.Write(front.Value);
+
+                if (front.LeftChild != null)
+                {
+                    queue.Enqueue(front.LeftChild);
+                }
+
+                if (front.RightChild != null)
+                {
+                    queue.Enqueue(front.RightChild);
+                }
             }
             return queue.ToArray();
         }
