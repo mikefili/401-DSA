@@ -24,14 +24,16 @@ namespace BreadthFirstTraversal
         public static object[] BreadthFirst(Node root)
         {
             List<object> list = new List<object>();
-            Queue<Node> tree = new Queue<Node>();
-            tree.Enqueue(root);
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(root);
 
-            while (tree.Count > 0)
+            while (queue.Count > 0)
             {
-
+                Node front = queue.Dequeue();
+                list.Add(front.Value);
+                Console.Write(front.Value);
             }
-            return tree.ToArray();
+            return queue.ToArray();
         }
     }
 }
