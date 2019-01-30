@@ -8,6 +8,7 @@ namespace BreadthFirstTraversal
     {
         static void Main(string[] args)
         {
+            // populate tree with nodes
             Node root = new Node(2);
             root.LeftChild = new Node(7);
             root.RightChild = new Node(5);
@@ -21,6 +22,11 @@ namespace BreadthFirstTraversal
             BreadthFirst(root);
         }
 
+        /// <summary>
+        /// breadth first tree traversal method
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
         public static object[] BreadthFirst(Node root)
         {
             List<object> list = new List<object>();
