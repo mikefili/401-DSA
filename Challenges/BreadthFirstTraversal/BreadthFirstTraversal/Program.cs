@@ -31,7 +31,7 @@ namespace BreadthFirstTraversal
             Console.WriteLine(4);
             Console.WriteLine();
             Console.WriteLine("Actual Output:");
-            BreadthFirst(root);
+            Console.WriteLine(BreadthFirst(root)[2]);
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace BreadthFirstTraversal
                     queue.Enqueue(front.RightChild);
                 }
             }
-            return queue.ToArray();
+            return list.ToArray();
         }
     }
 }
