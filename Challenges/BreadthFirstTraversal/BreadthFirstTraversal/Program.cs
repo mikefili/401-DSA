@@ -19,6 +19,18 @@ namespace BreadthFirstTraversal
             root.RightChild.RightChild = new Node(9);
             root.RightChild.RightChild.LeftChild = new Node(4);
 
+            Console.WriteLine("Expected Output:");
+            Console.WriteLine(2);
+            Console.WriteLine(7);
+            Console.WriteLine(5);
+            Console.WriteLine(2);
+            Console.WriteLine(6);
+            Console.WriteLine(9);
+            Console.WriteLine(5);
+            Console.WriteLine(11);
+            Console.WriteLine(4);
+            Console.WriteLine();
+            Console.WriteLine("Actual Output:");
             BreadthFirst(root);
         }
 
