@@ -13,3 +13,4 @@
 9.  [Data Structure: Trees](Data-Structures/Tree)
 10. [Challenge: FizzBuzz Tree](Challenges/FizzBuzzTree)
 11. [Challenge: Breadth First Traversal](Challenges/BreadthFirstTraversal)
+12. [Challenge: Find Maximum Value](Challenges/FindMaximumValue)
