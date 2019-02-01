@@ -3,7 +3,7 @@ using Trees.Classes;
 
 namespace FindMaximumValue
 {
-    public class Program
+    public class ProgramFMV
     {
         static void Main(string[] args)
         {
