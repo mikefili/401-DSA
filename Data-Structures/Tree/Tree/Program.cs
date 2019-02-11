@@ -47,6 +47,24 @@ namespace Trees.Classes
                 Console.Write($"[{item}]");
             }
             Console.WriteLine();
+
+            // populate bst node values
+            BinarySearchTree bst = new BinarySearchTree();
+            bst.Add(bst.Root, 5);
+            bst.Add(bst.Root, 10);
+            bst.Add(bst.Root, 15);
+            bst.Add(bst.Root, 20);
+            bst.Add(bst.Root, 25);
+            bst.Add(bst.Root, 30);
+
+            BinaryTree newBST = new BinaryTree(bst.Root);
+            object[] bstTraversal = newBST.InOrder(newBST.Root);
+            Console.WriteLine("Binary Search Tree: ");
+            foreach (var item in bstTraversal)
+            {
+                Console.Write($"[{item}]");
+            }
+            Console.WriteLine();
         }
     }
 }
