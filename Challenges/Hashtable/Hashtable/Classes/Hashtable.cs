@@ -17,6 +17,15 @@ namespace Hashtable.Classes
             return value;
         }
 
+        public bool Contains(string key)
+        {
+            return false;
+        }
 
+        public int Hash(string key)
+        {
+            int index = 0;
+            return index;
+        }
     }
 }
