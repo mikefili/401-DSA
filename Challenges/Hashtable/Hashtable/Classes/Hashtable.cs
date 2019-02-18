@@ -6,10 +6,16 @@ namespace HashTable.Classes
 {
     public class Hashtable
     {
+        /// <summary>
+        /// Properties
+        /// </summary>
         public static Node[] HT { get; set; }
-
         public static int Buckets { get; set; }
 
+        /// <summary>
+        /// Hashtable constructor
+        /// </summary>
+        /// <param name="buckets">Number of buckets in node array</param>
         public Hashtable(int buckets)
         {
             Buckets = buckets;
@@ -41,8 +47,6 @@ namespace HashTable.Classes
             {
                 value = HT[hashedKey].Value;
             }
-            Console.WriteLine($"Key: {HT[hashedKey].Key}");
-            Console.WriteLine($"Value: {HT[hashedKey].Value}");
             return value;
         }
 
@@ -53,8 +57,12 @@ namespace HashTable.Classes
         /// <returns>true if key exists, else false</returns>
         public bool Contains(string key)
         {
-
-            return false;
+            string check = Get(key);
+            if (check == null)
+            {
+                return false;
+            }
+            return true;
         }
 
         /// <summary>
