@@ -57,6 +57,10 @@ namespace HashTable.Classes
             {
                 value = HT[hashedKey].Value;
             }
+            else
+            {
+                return null;
+            }
             return value;
         }
 
