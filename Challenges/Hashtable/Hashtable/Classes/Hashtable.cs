@@ -6,6 +6,13 @@ namespace Hashtable.Classes
 {
     public class Hashtable
     {
+        public Node[] HT { get; set; }
+
+        public Hashtable()
+        {
+            
+        }
+
         public void Add(string key, string value)
         {
 
