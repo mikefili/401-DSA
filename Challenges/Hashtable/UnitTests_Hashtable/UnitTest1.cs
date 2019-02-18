@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using Hashtable.Classes;
+using HashTable.Classes;
 
 namespace UnitTests_Hashtable
 {
@@ -9,7 +9,7 @@ namespace UnitTests_Hashtable
         [Fact]
         public void CanHashArbitraryKey()
         {
-            Assert.Equal(456, Hashtable.Classes.Hashtable.Hash("Cat"));
+            Assert.Equal(456, HashTable.Classes.Hashtable.Hash("Cat"));
         }
     }
 }

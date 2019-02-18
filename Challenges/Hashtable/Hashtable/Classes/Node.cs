@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hashtable.Classes
+namespace HashTable.Classes
 {
     public class Node
     {

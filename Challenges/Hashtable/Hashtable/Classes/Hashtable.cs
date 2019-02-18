@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hashtable.Classes
+namespace HashTable.Classes
 {
     public class Hashtable
     {
         public Node[] HT { get; set; }
 
-        public int Buckets { get; set; }
+        public static int Buckets { get; set; }
 
-        public Hashtable()
+        public Hashtable(int buckets)
         {
-            
+            Buckets = buckets;
+            HT = new Node[Buckets];
         }
 
         public void Add(string key, string value)
@@ -41,7 +42,6 @@ namespace Hashtable.Classes
             int current = 0;
             for (int i = 0; i < key.Length; i++)
             {
-
                 int charValue = Convert.ToInt32(key[i]);
                 Console.Write($"{charValue} ");
                 current += charValue;
@@ -59,7 +59,7 @@ namespace Hashtable.Classes
             int primeVal = current * 499;
             Console.WriteLine($"{current} * 499 = {primeVal}");
 
-            int index = primeVal % 1024;
+            int index = primeVal % Hashtable.Buckets;
             Console.WriteLine($"{primeVal} / 1024 = {index}");
 
             Console.WriteLine($"Key gets placed in index of {index}");

@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Text;
-using Hashtable.Classes;
+using HashTable.Classes;
 
 
-namespace Hashtable
+namespace HashTable
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Hashtable.Classes.Hashtable.Hash("Cat");
+            Hashtable HT = new Hashtable(1024);
+            HashTable.Classes.Hashtable.Hash("Cat");
             Console.ReadLine();
         }
     }
