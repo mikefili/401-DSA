@@ -12,6 +12,10 @@ namespace HashTable
             Hashtable HT = new Hashtable(1024);
             HashTable.Classes.Hashtable.Hash("Cat");
             Console.ReadLine();
+
+            Hashtable HT2 = new Hashtable(1024);
+            HashTable.Classes.Hashtable.Hash("Mike");
+            Console.ReadLine();
         }
     }
 }

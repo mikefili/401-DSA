@@ -9,7 +9,16 @@ namespace UnitTests_Hashtable
         [Fact]
         public void CanHashArbitraryKey()
         {
-            Assert.Equal(456, HashTable.Classes.Hashtable.Hash("Cat"));
+            Hashtable HT = new Hashtable(1024);
+            int actual = Hashtable.Hash("Cat");
+            Assert.Equal(136, actual);
+        }
+
+        [Fact]
+        public void CanAddKeyValuePairToHashTable()
+        {
+            Hashtable HT = new Hashtable(1024);
+            int actual = Hashtable.
         }
     }
 }

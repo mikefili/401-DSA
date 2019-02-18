@@ -24,9 +24,8 @@ namespace HashTable.Classes
         /// <param name="value">Key value pair's value string</param>
         public void Add(string key, string value)
         {
-            Node hashNode = new Node(key, value);
             int hashedKey = Hash(key);
-            HT[hashedKey] = hashNode;
+            HT[hashedKey] = new Node(key, value);
         }
 
         public string Get(string key)
@@ -64,10 +63,10 @@ namespace HashTable.Classes
             }
             Console.WriteLine(current);
 
-            int primeVal = current * 499;
+            decimal primeVal = current * 499;
             Console.WriteLine($"{current} * 499 = {primeVal}");
 
-            int index = primeVal % Hashtable.Buckets;
+            int index = Convert.ToInt32(Math.Round(primeVal / Buckets));
             Console.WriteLine($"{primeVal} / 1024 = {index}");
 
             Console.WriteLine($"Key gets placed in index of {index}");
