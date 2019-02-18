@@ -7,9 +7,13 @@ namespace UnitTests_InsertionSort
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CanSortUnsortedArray()
         {
-
+            int[] unsortedArr = { 1, 5, 3 };
+            int[] expectedArr = { 1, 3, 5 };
+            Assert.Equal(expectedArr, Program.InsertionSort(unsortedArr));
         }
+
+
     }
 }
