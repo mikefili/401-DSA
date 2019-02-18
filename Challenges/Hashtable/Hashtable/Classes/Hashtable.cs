@@ -35,7 +35,7 @@ namespace Hashtable.Classes
             for (int i = 0; i < key.Length; i++)
             {
 
-                int charValue = (Encoding.ASCII.GetMaxByteCount(key[i]) - 1);
+                int charValue = Convert.ToInt32(key[i]);
                 Console.Write($"{charValue} ");
                 current += charValue;
                 if (i == (key.Length - 1))
