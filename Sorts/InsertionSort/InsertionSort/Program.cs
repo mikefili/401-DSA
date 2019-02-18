@@ -6,9 +6,6 @@ namespace InsertionSort
     {
         static void Main(string[] args)
         {
-            int[] sortedArr = { 1, 3, 5 };
-            InsertionSort(sortedArr);
-
             int[] backwardsArr = { 5, 3, 1 };
             InsertionSort(backwardsArr);
 
