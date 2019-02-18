@@ -32,5 +32,13 @@ namespace UnitTests_Hashtable
             string actual = HT.Get("Mike");
             Assert.Equal("Filicetti", actual);
         }
+
+        [Fact]
+        public void CanCheckIfKeyExists()
+        {
+            Hashtable HT = new Hashtable(1024);
+            HT.Add("Mike", "Filicetti");
+            Assert.True(HT.Contains("Mike"));
+        }
     }
 }
