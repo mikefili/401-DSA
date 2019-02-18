@@ -15,3 +15,4 @@
 11. [Challenge: Breadth First Traversal](Challenges/BreadthFirstTraversal)
 12. [Challenge: Find Maximum Value](Challenges/FindMaximumValue)
 13. [Challenge: Hashtable](Challenges/Hashtable)
+14. [Challenge: Repeated Word](Challenges/RepeatedWord)
