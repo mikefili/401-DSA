@@ -6,11 +6,7 @@ namespace InsertionSort
     {
         static void Main(string[] args)
         {
-            int[] emptyArr = { };
-            InsertionSort(emptyArr);
 
-            int[] singleItemArr = { 1 };
-            InsertionSort(singleItemArr);
         }
 
         public static int[] InsertionSort(int[] array)
@@ -26,11 +22,12 @@ namespace InsertionSort
                 }
                 array[j + 1] = n;
             }
+            Console.Write("{ ");
             for (int i = 0; i < array.Length; i++)
             {
-                Console.Write($"{array[i]} ");
+                Console.Write($"{array[i]}, ");
             }
-            Console.WriteLine();
+            Console.WriteLine("}");
             return array;
         }
     }

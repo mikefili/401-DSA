@@ -29,5 +29,21 @@ namespace UnitTests_InsertionSort
             int[] expectedArr = { 1, 3, 5 };
             Assert.Equal(expectedArr, Program.InsertionSort(backwardsArr));
         }
+
+        [Fact]
+        public void CanReturnEmptyArray()
+        {
+            int[] emptyArr = { };
+            int[] expectedArr = { };
+            Assert.Equal(expectedArr, Program.InsertionSort(emptyArr));
+        }
+
+        [Fact]
+        public void CanReturnSingleValueArrayUnchanged()
+        {
+            int[] singleItemArr = { 1 };
+            int[] expectedArr = { 1 };
+            Assert.Equal(expectedArr, Program.InsertionSort(singleItemArr));
+        }
     }
 }
