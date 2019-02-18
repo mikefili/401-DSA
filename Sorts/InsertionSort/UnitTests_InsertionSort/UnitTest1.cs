@@ -14,6 +14,12 @@ namespace UnitTests_InsertionSort
             Assert.Equal(expectedArr, Program.InsertionSort(unsortedArr));
         }
 
-
+        [Fact]
+        public void CanReturnSortedArrayUnchanged()
+        {
+            int[] sortedArr = { 1, 3, 5 };
+            int[] expectedArr = { 1, 3, 5 };
+            Assert.Equal(expectedArr, Program.InsertionSort(sortedArr));
+        }
     }
 }
