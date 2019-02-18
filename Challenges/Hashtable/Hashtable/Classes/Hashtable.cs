@@ -31,6 +31,13 @@ namespace HashTable.Classes
         public string Get(string key)
         {
             string value = "";
+            int hashedKey = Hash(key);
+            if (HT[hashedKey].Key == key)
+            {
+                value = HT[hashedKey].Value;
+            }
+            Console.WriteLine($"Key: {HT[hashedKey].Key}");
+            Console.WriteLine($"Value: {HT[hashedKey].Value}");
             return value;
         }
 
@@ -50,26 +57,10 @@ namespace HashTable.Classes
             for (int i = 0; i < key.Length; i++)
             {
                 int charValue = Convert.ToInt32(key[i]);
-                Console.Write($"{charValue} ");
                 current += charValue;
-                if (i == (key.Length - 1))
-                {
-                    Console.Write("= ");
-                }
-                else
-                {
-                    Console.Write("+ ");
-                }
             }
-            Console.WriteLine(current);
-
             int primeVal = current * 499;
-            Console.WriteLine($"{current} * 499 = {primeVal}");
-
             int index = primeVal / Buckets;
-            Console.WriteLine($"{primeVal} / {HT.Length} = {index}");
-
-            Console.WriteLine($"Key gets placed in index of {index}");
             return index;
         }
     }
