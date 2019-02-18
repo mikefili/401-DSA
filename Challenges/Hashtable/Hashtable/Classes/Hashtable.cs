@@ -29,7 +29,19 @@ namespace HashTable.Classes
         public void Add(string key, string value)
         {
             int hashedKey = Hash(key);
-            HT[hashedKey] = new Node(key, value);
+            if (HT[hashedKey] == null)
+            {
+                HT[hashedKey] = new Node(key, value);
+            }
+            else
+            {
+                Node collision = HT[hashedKey];
+                while (collision.Next != null)
+                {
+                    collision = collision.Next;
+                }
+                collision.Next = new Node(key, value);
+            }
         }
 
         /// <summary>

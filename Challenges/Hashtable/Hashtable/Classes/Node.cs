@@ -9,6 +9,7 @@ namespace HashTable.Classes
         public string Key { get; set; }
         public string Value { get; set; }
         public string KeyValuePair { get; set; }
+        public Node Next { get; set; }
 
         /// <summary>
         /// Create a new Node with a key value pair
