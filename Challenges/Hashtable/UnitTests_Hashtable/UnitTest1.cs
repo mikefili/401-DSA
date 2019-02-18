@@ -18,7 +18,8 @@ namespace UnitTests_Hashtable
         public void CanAddKeyValuePairToHashTable()
         {
             Hashtable HT = new Hashtable(1024);
-            int actual = Hashtable.
+            HT.Add("Mike", "Filicetti");
+            Assert.Equal("Filicetti", Hashtable.HT[190].Value);
         }
     }
 }

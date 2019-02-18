@@ -6,7 +6,7 @@ namespace HashTable.Classes
 {
     public class Hashtable
     {
-        public Node[] HT { get; set; }
+        public static Node[] HT { get; set; }
 
         public static int Buckets { get; set; }
 
@@ -63,11 +63,11 @@ namespace HashTable.Classes
             }
             Console.WriteLine(current);
 
-            decimal primeVal = current * 499;
+            int primeVal = current * 499;
             Console.WriteLine($"{current} * 499 = {primeVal}");
 
-            int index = Convert.ToInt32(Math.Round(primeVal / Buckets));
-            Console.WriteLine($"{primeVal} / 1024 = {index}");
+            int index = primeVal / Buckets;
+            Console.WriteLine($"{primeVal} / {HT.Length} = {index}");
 
             Console.WriteLine($"Key gets placed in index of {index}");
             return index;
