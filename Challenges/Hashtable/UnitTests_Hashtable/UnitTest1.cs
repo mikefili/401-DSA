@@ -58,5 +58,13 @@ namespace UnitTests_Hashtable
             HT.Add("Mike", "Filicetti");
             Assert.True(HT.Contains("Mike"));
         }
+
+        [Fact]
+        public void CanConfirmIfKeyNotPresent()
+        {
+            Hashtable HT = new Hashtable(1024);
+            HT.Add("Mike", "Filicetti");
+            Assert.False(HT.Contains("John"));
+        }
     }
 }
