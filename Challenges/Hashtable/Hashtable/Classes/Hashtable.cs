@@ -53,7 +53,11 @@ namespace HashTable.Classes
         {
             string value = "";
             int hashedKey = Hash(key);
-            if (HT[hashedKey].Key == key)
+            if (Contains(key) == false)
+            {
+                return null;
+            }
+            else if (HT[hashedKey].Key == key)
             {
                 value = HT[hashedKey].Value;
             }
@@ -71,8 +75,8 @@ namespace HashTable.Classes
         /// <returns>true if key exists, else false</returns>
         public bool Contains(string key)
         {
-            string check = Get(key);
-            if (check == null)
+            int hashedKey = Hash(key);
+            if (HT[hashedKey] == null)
             {
                 return false;
             }

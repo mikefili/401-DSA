@@ -45,6 +45,13 @@ namespace UnitTests_Hashtable
         }
 
         [Fact]
+        public void CanReturnNullIfKeyNotPresent()
+        {
+            Hashtable HT = new Hashtable(1024);
+            Assert.Null(HT.Get("Mike"));
+        }
+
+        [Fact]
         public void CanCheckIfKeyExists()
         {
             Hashtable HT = new Hashtable(1024);
