@@ -31,13 +31,13 @@ namespace Hashtable.Classes
 
         public static int Hash(string key)
         {
-            int index = 0;
+            int current = 0;
             for (int i = 0; i < key.Length; i++)
             {
 
                 int charValue = (Encoding.ASCII.GetMaxByteCount(key[i]) - 1);
                 Console.Write($"{charValue} ");
-                index += charValue;
+                current += charValue;
                 if (i == (key.Length - 1))
                 {
                     Console.Write("= ");
@@ -47,7 +47,15 @@ namespace Hashtable.Classes
                     Console.Write("+ ");
                 }
             }
-            Console.Write(index);
+            Console.WriteLine(current);
+
+            int primeVal = current * 499;
+            Console.WriteLine($"{current} * 499 = {primeVal}");
+
+            int index = primeVal % 1024;
+            Console.WriteLine($"{primeVal} / 1024 = {index}");
+
+            Console.WriteLine($"Key gets placed in index of {index}");
             return index;
         }
     }

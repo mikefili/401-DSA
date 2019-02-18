@@ -12,7 +12,5 @@ namespace Hashtable
             Hashtable.Classes.Hashtable.Hash("Cat");
             Console.ReadLine();
         }
-
-        
     }
 }
