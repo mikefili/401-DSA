@@ -25,6 +25,17 @@ namespace UnitTests_Hashtable
         }
 
         [Fact]
+        public void CanHandleCollision()
+        {
+            Hashtable HT = new Hashtable(1024);
+            HT.Add("mile", "high");
+            string key1 = HT.Get("mile");
+            HT.Add("lime", "coconut");
+            string key2 = HT.Get("lime");
+            Assert.NotEqual(key1, key2);
+        }
+
+        [Fact]
         public void CanGetValueGivenKey()
         {
             Hashtable HT = new Hashtable(1024);
