@@ -10,7 +10,6 @@ namespace HashTable.Classes
         /// Properties
         /// </summary>
         public static Node[] HT { get; set; }
-        public static int Buckets { get; set; }
 
         /// <summary>
         /// Hashtable constructor
@@ -18,8 +17,7 @@ namespace HashTable.Classes
         /// <param name="buckets">Number of buckets in node array</param>
         public Hashtable(int buckets)
         {
-            Buckets = buckets;
-            HT = new Node[Buckets];
+            HT = new Node[buckets];
         }
 
         /// <summary>
@@ -72,14 +70,12 @@ namespace HashTable.Classes
         /// <returns>index in node array</returns>
         public static int Hash(string key)
         {
-            int current = 0;
+            int index = 0;
             for (int i = 0; i < key.Length; i++)
             {
-                int charValue = Convert.ToInt32(key[i]);
-                current += charValue;
+                index += Convert.ToInt32(key[i]);
             }
-            int primeVal = current * 499;
-            int index = primeVal / Buckets;
+            index = (index * 499) / HT.Length;
             return index;
         }
     }
