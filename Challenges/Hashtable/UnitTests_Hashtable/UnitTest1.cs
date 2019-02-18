@@ -7,9 +7,9 @@ namespace UnitTests_Hashtable
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CanHashArbitraryKey()
         {
-
+            Assert.Equal(456, Hashtable.Classes.Hashtable.Hash("Cat"));
         }
     }
 }

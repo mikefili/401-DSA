@@ -8,6 +8,8 @@ namespace Hashtable.Classes
     {
         public Node[] HT { get; set; }
 
+        public int Buckets { get; set; }
+
         public Hashtable()
         {
             
@@ -29,6 +31,11 @@ namespace Hashtable.Classes
             return false;
         }
 
+        /// <summary>
+        /// Takes in a key and returns its index in the node array
+        /// </summary>
+        /// <param name="key">key in key value pair</param>
+        /// <returns>index in node array</returns>
         public static int Hash(string key)
         {
             int current = 0;
