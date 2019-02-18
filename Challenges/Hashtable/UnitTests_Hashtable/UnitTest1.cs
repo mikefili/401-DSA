@@ -23,5 +23,14 @@ namespace UnitTests_Hashtable
             string actual = Hashtable.HT[key].Value;
             Assert.Equal("Filicetti", actual);
         }
+
+        [Fact]
+        public void CanGetValueGivenKey()
+        {
+            Hashtable HT = new Hashtable(1024);
+            HT.Add("Mike", "Filicetti");
+            string actual = HT.Get("Mike");
+            Assert.Equal("Filicetti", actual);
+        }
     }
 }
