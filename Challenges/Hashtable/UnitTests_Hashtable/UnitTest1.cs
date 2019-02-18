@@ -19,7 +19,8 @@ namespace UnitTests_Hashtable
         {
             Hashtable HT = new Hashtable(1024);
             HT.Add("Mike", "Filicetti");
-            Assert.Equal("Filicetti", Hashtable.HT[190].Value);
+            int key = Hashtable.Hash("Mike");
+            Assert.Equal("Filicetti", Hashtable.HT[key].Value);
         }
     }
 }
