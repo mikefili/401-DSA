@@ -28,6 +28,11 @@ namespace HashTable.Classes
             HT[hashedKey] = new Node(key, value);
         }
 
+        /// <summary>
+        /// Takes in a key and returns its value from the node array
+        /// </summary>
+        /// <param name="key">Key value pair's key string</param>
+        /// <returns>Key value pair's value string</returns>
         public string Get(string key)
         {
             string value = "";
@@ -41,15 +46,21 @@ namespace HashTable.Classes
             return value;
         }
 
+        /// <summary>
+        /// Takes in a key and returns true if it already exists in the table
+        /// </summary>
+        /// <param name="key">Key value pair's key string</param>
+        /// <returns>true if key exists, else false</returns>
         public bool Contains(string key)
         {
+
             return false;
         }
 
         /// <summary>
         /// Takes in a key and returns its index in the node array
         /// </summary>
-        /// <param name="key">key in key value pair</param>
+        /// <param name="key">Key value pair's key string</param>
         /// <returns>index in node array</returns>
         public static int Hash(string key)
         {
