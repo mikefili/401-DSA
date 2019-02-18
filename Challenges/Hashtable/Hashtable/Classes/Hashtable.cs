@@ -29,9 +29,25 @@ namespace Hashtable.Classes
             return false;
         }
 
-        public int Hash(string key)
+        public static int Hash(string key)
         {
             int index = 0;
+            for (int i = 0; i < key.Length; i++)
+            {
+
+                int charValue = (Encoding.ASCII.GetMaxByteCount(key[i]) - 1);
+                Console.Write($"{charValue} ");
+                index += charValue;
+                if (i == (key.Length - 1))
+                {
+                    Console.Write("= ");
+                }
+                else
+                {
+                    Console.Write("+ ");
+                }
+            }
+            Console.Write(index);
             return index;
         }
     }

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Text;
+using Hashtable.Classes;
+
 
 namespace Hashtable
 {
@@ -6,7 +9,10 @@ namespace Hashtable
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Hashtable.Classes.Hashtable.Hash("Cat");
+            Console.ReadLine();
         }
+
+        
     }
 }
