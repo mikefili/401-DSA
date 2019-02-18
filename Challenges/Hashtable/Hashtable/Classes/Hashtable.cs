@@ -16,9 +16,17 @@ namespace HashTable.Classes
             HT = new Node[Buckets];
         }
 
+        /// <summary>
+        /// Creates a new Node in the node array that holds the key value pair
+        /// at the index found by hashing the key
+        /// </summary>
+        /// <param name="key">Key value pair's key string</param>
+        /// <param name="value">Key value pair's value string</param>
         public void Add(string key, string value)
         {
-
+            Node hashNode = new Node(key, value);
+            int hashedKey = Hash(key);
+            HT[hashedKey] = hashNode;
         }
 
         public string Get(string key)
