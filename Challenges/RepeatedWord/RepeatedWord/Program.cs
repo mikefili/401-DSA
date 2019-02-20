@@ -15,7 +15,8 @@ namespace RepeatedWord
         {
             Hashtable HT = new Hashtable(1024);
 
-            string[] words = lengthyString.Split(null);
+            char[] remove = { ' ', ',', '.' };
+            string[] words = lengthyString.Split(remove, StringSplitOptions.RemoveEmptyEntries);
             foreach (string word in words)
             {
                 string lowerWord = word.ToLower();

@@ -29,5 +29,13 @@ namespace UnitTests_RepeatedWord
             string expected = "No Repeated Words";
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void CanAccountForPunctuation()
+        {
+            string actual = Program.RepeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...");
+            string expected = "summer";
+            Assert.Equal(expected, actual);
+        }
     }
 }
