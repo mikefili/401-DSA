@@ -17,3 +17,4 @@
 13. [Challenge: Hashtable](Challenges/Hashtable)
 14. [Challenge: Repeated Word](Challenges/RepeatedWord)
 15. [Challenge: Tree Intersection](Challenges/TreeIntersection)
+16. [Challenge: Left Join}(Challenges/LeftJoin)
