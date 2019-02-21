@@ -28,15 +28,17 @@ namespace StacksAndQueues.Classes
         /// Add a new node with a given value to the queue
         /// </summary>
         /// <param name="val">value of node to be added</param>
-        public void Enqueue(Node node)
+        public void Enqueue(int val)
         {
             if (Front == null)
             {
+                Node node = new Node(val);
                 Front = node;
                 Rear = node;
             }
             else
             {
+                Node node = new Node(val);
                 Rear.Next = node;
                 Rear = node;
             }
