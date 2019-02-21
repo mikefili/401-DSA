@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Trees.Classes;
 
 namespace TreeIntersection
@@ -10,9 +11,9 @@ namespace TreeIntersection
             Console.WriteLine("Hello World!");
         }
 
-        public static int[] TreeIntersection(BinaryTree tree1, BinaryTree tree2)
+        public static List<int> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
         {
-            int[] commonValues = { };
+            List<int> commonValues = new List<int>();
             return commonValues;
         }
     }
