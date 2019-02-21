@@ -1,6 +1,6 @@
 <h1 align="center">Data Structures and Algorithms</h1>
 
-## Table of Contents
+<h2 align="center">Table of Contents<h2>
 ### Data Structures
 1.  [Linked List](Data-Structures/LinkedList)
 2.  [Stacks & Queues](Data-Structures/StacksAndQueues)
