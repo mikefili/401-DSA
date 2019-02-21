@@ -88,7 +88,7 @@ namespace UnitTests_StacksAndQueues
         public void CanEnqueueNodeToEmptyQueue()
         {
             Queue queue = new Queue();
-            queue.Enqueue(1);
+            queue.Enqueue(new Node(1));
             int expected = 1;
             Assert.Equal(expected, queue.Front.Value);
         }
@@ -97,9 +97,9 @@ namespace UnitTests_StacksAndQueues
         public void CanEnqueueNodeToQueue()
         {
             Queue queue = new Queue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
+            queue.Enqueue(new Node(1));
+            queue.Enqueue(new Node(2));
+            queue.Enqueue(new Node(3));
             int expected = 3;
             Assert.Equal(expected, queue.Rear.Value);
         }
@@ -108,9 +108,9 @@ namespace UnitTests_StacksAndQueues
         public void CanDequeueNodeFromQueue()
         {
             Queue queue = new Queue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
+            queue.Enqueue(new Node(1));
+            queue.Enqueue(new Node(2));
+            queue.Enqueue(new Node(3));
             int expected = 2;
             queue.Dequeue();
             Assert.Equal(expected, queue.Front.Value);
@@ -127,11 +127,11 @@ namespace UnitTests_StacksAndQueues
         public void CanDequeueMultipleNodesFromQueue()
         {
             Queue queue = new Queue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(4);
-            queue.Enqueue(5);
+            queue.Enqueue(new Node(1));
+            queue.Enqueue(new Node(2));
+            queue.Enqueue(new Node(3));
+            queue.Enqueue(new Node(4));
+            queue.Enqueue(new Node(5));
             int[] expected = { 1, 2, 3 };
             int[] actual = {queue.Dequeue().Value, queue.Dequeue().Value, queue.Dequeue().Value};
             Assert.Equal(expected, actual);
@@ -141,9 +141,9 @@ namespace UnitTests_StacksAndQueues
         public void CanPeekAtTopNodeInQueue()
         {
             Queue queue = new Queue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
+            queue.Enqueue(new Node(1));
+            queue.Enqueue(new Node(2));
+            queue.Enqueue(new Node(3));
             Assert.Equal(1, queue.Peek().Value);
         }
 
