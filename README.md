@@ -7,17 +7,20 @@
   <li><a href="/Data-Structures/StacksAndQueues">Stacks & Queues</a></li>
   <li><a href="/Data-Structures/Tree">Trees</a></li>
   <li><a href="/Challenges/Hashtable">Hashtable</a></li>
+</ol>
 
 <h3>Challenges</h3>
-1.  [Insert & Shift an Array](Challenges/ArrayInsert)
-2.  [Array Binary Search](Challenges/BinarySearch)
-3.  [Kth Value in Linked List](Challenges/KthFromEnd/ll_kth_from_end)
-4.  [Linked List Merge](Challenges/LLMerge/ll_merge)  
-5.  [Queue with Stacks](Challenges/QueueWithStacks/QueueWithStacks)
-6.  [Multi Bracket Validation](Challenges/MultiBracketValidation)  
-7.  [FizzBuzz Tree](Challenges/FizzBuzzTree)
-8.  [Breadth First Traversal](Challenges/BreadthFirstTraversal)
-9.  [Find Maximum Value](Challenges/FindMaximumValue) 
-10. [Repeated Word](Challenges/RepeatedWord)
-11. [Tree Intersection](Challenges/TreeIntersection)
-12. [Left Join](Challenges/LeftJoin)
+<ol>
+  <li><a href="/Challenges/ArrayInsert">Insert & Shift an Array</a></li>
+  <li><a href="/Challenges/BinarySearch">Array Binary Search</a></li>
+  <li><a href="/Challenges/KthFromEnd/ll_kth_from_end">Kth Value in Linked List</a></li>
+  <li><a href="/Challenges/LLMerge/ll_merge">Linked List Mergez</a></li>
+  <li><a href="/Challenges/QueueWithStacks/QueueWithStacks">Queue with Stacks</a></li>
+  <li><a href="/Challenges/MultiBracketValidation">Multi Bracket Validation</a></li>
+  <li><a href="/Challenges/FizzBuzzTree">FizzBuzz Tree</a></li>
+  <li><a href=/Challenges/BreadthFirstTraversal"">Breadth First Traversal</a></li>
+  <li><a href="/Challenges/FindMaximumValue">Find Maximum Value</a></li>
+  <li><a href="/Challenges/RepeatedWord">Repeated Word</a></li>
+  <li><a href="/Challenges/TreeIntersection">Tree Intersection</a></li>
+  <li><a href="/Challenges/LeftJoin">Left Join</a></li>
+</ol>
