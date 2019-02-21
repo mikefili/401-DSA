@@ -9,4 +9,4 @@ Write a method which takes in two hashtables as parameters. Without using any bu
 - Space: O(n)
 
 ## Solution
-![Whiteboard Image](/whiteboard_img.jpg)
+![Whiteboard Image](whiteboard_img.jpg)
