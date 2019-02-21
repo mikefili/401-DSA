@@ -1,13 +1,13 @@
 <h1 align="center">Data Structures and Algorithms</h1>
 
 <h2 align="center">Table of Contents</h2>
-### Data Structures
+<h3>Data Structures</h3>
 1.  [Linked List](Data-Structures/LinkedList)
 2.  [Stacks & Queues](Data-Structures/StacksAndQueues)
 3.  [Trees](Data-Structures/Tree)
 4.  [Hashtable](Challenges/Hashtable)
 
-### Challenges
+<h3>Challenges</h3>
 1.  [Insert & Shift an Array](Challenges/ArrayInsert)
 2.  [Array Binary Search](Challenges/BinarySearch)
 3.  [Kth Value in Linked List](Challenges/KthFromEnd/ll_kth_from_end)
