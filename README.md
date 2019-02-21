@@ -2,10 +2,11 @@
 
 <h2 align="center">Table of Contents</h2>
 <h3>Data Structures</h3>
-1.  [Linked List](Data-Structures/LinkedList)
-2.  [Stacks & Queues](Data-Structures/StacksAndQueues)
-3.  [Trees](Data-Structures/Tree)
-4.  [Hashtable](Challenges/Hashtable)
+<ol>
+  <li><a href="/Data-Structures/LinkedList">Linked List</a></li>
+  <li><a href="/Data-Structures/StacksAndQueues">Stacks & Queues</a></li>
+  <li><a href="/Data-Structures/Tree">Trees</a></li>
+  <li><a href="/Challenges/Hashtable">Hashtable</a></li>
 
 <h3>Challenges</h3>
 1.  [Insert & Shift an Array](Challenges/ArrayInsert)
