@@ -3,7 +3,7 @@
 <h2 align="center">Table of Contents</h2>
 <h3>Data Structures</h3>
 <ol>
-  <li><a href="/Data-Structures/LinkedList">Linked List</a></li>
+  <li><a href="/Data-Structures/LinkedList">Linked Lists</a></li>
   <li><a href="/Data-Structures/StacksAndQueues">Stacks & Queues</a></li>
   <li><a href="/Data-Structures/Tree">Trees</a></li>
   <li><a href="/Challenges/Hashtable">Hashtables</a></li>
