@@ -9,7 +9,8 @@ namespace Graph.Classes
         // properties
         public int Value { get; set; }
         public List<Node> Neighbors { get; set; }
-        public bool Visited { get; set; }        
+        public bool Visited { get; set; } 
+        public int Degrees { get; set; }
 
         /// <summary>
         /// instantiate empty node class
@@ -28,6 +29,7 @@ namespace Graph.Classes
             Value = value;
             Visited = false;
             Neighbors = new List<Node>();
+            Degrees = Neighbors.Count;
         }
     }
 }

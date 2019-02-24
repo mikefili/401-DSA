@@ -6,7 +6,9 @@ namespace Graph.Classes
 {
     public class Graph
     {
-        public int MyProperty { get; set; }
+        // properties
+        private List<Node> Nodes { get;  }
+        public int 
 
         // Add a node
         public static Node AddNode(int value)
