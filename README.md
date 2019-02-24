@@ -6,7 +6,8 @@
   <li><a href="/Data-Structures/LinkedList">Linked List</a></li>
   <li><a href="/Data-Structures/StacksAndQueues">Stacks & Queues</a></li>
   <li><a href="/Data-Structures/Tree">Trees</a></li>
-  <li><a href="/Challenges/Hashtable">Hashtable</a></li>
+  <li><a href="/Challenges/Hashtable">Hashtables</a></li>
+  <li><a href="/Data-Structures/Graph">Graphs<a></li>
 </ol>
 
 <h3>Challenges</h3>
