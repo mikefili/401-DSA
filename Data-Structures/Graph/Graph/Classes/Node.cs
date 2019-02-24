@@ -6,7 +6,10 @@ namespace Graph.Classes
 {
     public class Node
     {
+        // properties
         public int Value { get; set; }
+        public List<Node> Neighbors { get; set; }
+        public bool Visited { get; set; }        
 
         /// <summary>
         /// instantiate empty node class
@@ -23,6 +26,8 @@ namespace Graph.Classes
         public Node(int value)
         {
             Value = value;
+            Visited = false;
+            Neighbors = new List<Node>();
         }
     }
 }
