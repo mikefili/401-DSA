@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using HashTable.Classes;
 
 namespace LeftJoin
 {
@@ -6,7 +8,14 @@ namespace LeftJoin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+
+        public static List<string[]> LeftJoin(Hashtable HT1, Hashtable HT2)
+        {
+            List<string[]> result = new List<string[]>();
+            
+            return result;
         }
     }
 }
