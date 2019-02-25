@@ -15,6 +15,11 @@ namespace EC2_UniqueCharacterValidator
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Determines if a string is full of unique characters
+        /// </summary>
+        /// <param name="input">string to be checked</param>
+        /// <returns>true if unique, false if not</returns>
         public static bool UniqueCharValidator(string input)
         {
             input = input.Replace(" ", "");
