@@ -29,5 +29,11 @@ namespace UnitTests_EC2
         {
             Assert.True(Program.UniqueCharValidator("a b c d e f g h i j k l m n o p q r s t u v w x y z"));
         }
+
+        [Fact]
+        public void CanValidateStringUniqueCaseSensitive()
+        {
+            Assert.True(Program.UniqueCharValidator("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"));
+        }
     }
 }
