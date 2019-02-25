@@ -11,5 +11,11 @@ namespace UnitTests_EC2
         {
             Assert.True(Program.UniqueCharValidator(""));
         }
+
+        [Fact]
+        public void CanValidateUniqueString()
+        {
+            Assert.True(Program.UniqueCharValidator("abcdefghijklmnopqrstuvwxyz"));
+        }
     }
 }
