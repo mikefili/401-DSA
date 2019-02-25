@@ -23,6 +23,11 @@ namespace Graph.Classes
         }
         
         // Get Nodes
+        public static List<Node> GetNodes()
+        {
+            List<Node> nodes = new List<Node>();
+            return nodes;
+        }
 
 
         // Get Neighbors
