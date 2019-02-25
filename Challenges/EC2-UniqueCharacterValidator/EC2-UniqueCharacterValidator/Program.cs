@@ -17,6 +17,7 @@ namespace EC2_UniqueCharacterValidator
 
         public static bool UniqueCharValidator(string input)
         {
+            input = input.Replace(" ", "");
             Hashtable HT = new Hashtable(1024);
 
             for (int i = 0; i < input.Length; i++)
