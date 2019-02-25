@@ -18,9 +18,9 @@ namespace Graph.Classes
         }
 
         // Add an edge
-        public static void AddEdge(Node front, Node rear)
+        public static void AddEdge(Node node)
         {
-
+            node.Neighbors.Add(node);
         }
         
         // Get Nodes
