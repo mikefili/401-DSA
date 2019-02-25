@@ -11,6 +11,7 @@ namespace Graph.Classes
         public List<Node> Neighbors { get; set; }
         public bool Visited { get; set; } 
         public int Degrees { get; set; }
+        public List<Edge> Edges { get; set; }
 
         /// <summary>
         /// instantiate empty node class

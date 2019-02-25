@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Graph.Classes
@@ -8,25 +9,50 @@ namespace Graph.Classes
     {
         // properties
         public List<Node> Nodes { get; }
-        public int 
 
-        // Add a node
-        public static Node AddNode(int value)
+        public Graph()
         {
-            Node node = new Node(value);
-            return node;
+            Nodes = new List<Node>();
         }
 
+        // Add a node
+        public Node AddNode(int value)
+        {
+            Node node = new Node(value);
+            if (Nodes.Contains(node))
+            {
+                return null;
+            }
+            else
+            {
+                Nodes.Add(node);
+                return node;
+            }
+        }
 
         // Add an edge
-
+        public void AddEdge(Node nodeOne, Node nodeTwo)
+        {
+            node.Neighbors.Add(node);
+        }
         
         // Get Nodes
-
+        public List<Node> GetNodes()
+        {
+            List<Node> nodes = new List<Node>();
+            return nodes;
+        }
 
         // Get Neighbors
-
+        public static List<Node> GetNeighbors(Node node)
+        {
+            return node.Neighbors;
+        }
         
         // Get Size
+        public int Size(Graph graph)
+        {
+            return Nodes.Count;
+        }
     }
 }
