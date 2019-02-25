@@ -6,6 +6,8 @@ namespace Graph.Classes
 {
     public class Edge
     {
+        public Node Origin { get; set; }
+        public Node Next { get; set; }
         public int Weight { get; set; }
 
         public Edge(int weight)

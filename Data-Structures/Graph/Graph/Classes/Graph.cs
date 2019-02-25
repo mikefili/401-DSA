@@ -31,7 +31,7 @@ namespace Graph.Classes
         }
 
         // Add an edge
-        public static void AddEdge(Node node)
+        public void AddEdge(Node nodeOne, Node nodeTwo)
         {
             node.Neighbors.Add(node);
         }
@@ -52,7 +52,7 @@ namespace Graph.Classes
         // Get Size
         public int Size(Graph graph)
         {
-            return Nodes.Count();
+            return Nodes.Count;
         }
     }
 }
