@@ -29,8 +29,11 @@ namespace Graph.Classes
             return nodes;
         }
 
-
         // Get Neighbors
+        public static List<Node> GetNeighbors(Node node)
+        {
+            return node.Neighbors;
+        }
 
         
         // Get Size
