@@ -8,7 +8,6 @@ namespace Graph.Classes
     {
         // properties
         public List<Node> Nodes { get; }
-        public int 
 
         // Add a node
         public static Node AddNode(int value)
@@ -17,9 +16,11 @@ namespace Graph.Classes
             return node;
         }
 
-
         // Add an edge
+        public static void AddEdge(Node front, Node rear)
+        {
 
+        }
         
         // Get Nodes
 
