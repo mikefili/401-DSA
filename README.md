@@ -28,5 +28,5 @@
 
 <h3>Extra Credit</h3>
 <ol>
-  <li><a href="/Challenges/UniqueCharacterValidator">Unique Character Validator</a></li>
+  <li><a href="/Challenges/EC2-UniqueCharacterValidator">Unique Character Validator</a></li>
 </ol>
