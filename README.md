@@ -25,3 +25,8 @@
   <li><a href="/Challenges/TreeIntersection">Tree Intersection</a></li>
   <li><a href="/Challenges/LeftJoin">Left Join</a></li>
 </ol>
+
+<h3>Extra Credit</h3>
+<ol>
+  <li><a href="/Challenges/UniqueCharacterValidator">Unique Character Validator</a></li>
+</ol>
