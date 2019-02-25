@@ -2,8 +2,30 @@
 Implement a Graph
 
 ## Challenge
-Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+Implement your own Graph. The graph should be represented as an adjacency list, and should include the ability to: add a node, add an edge, get all nodes, get a node's neighbors, and get the size of the graph.
 
+## Approach & Efficiency
+### AddNode()
+ - Time: O(n) since we have to look through the graph to see if the node currently exists
+ - Space: O(1) since we are adding a single node
+
+### AddEdge()
+ - Time: O(1) since we are adding an edge, not iterating through anything
+ - Space: O(1) since we are not returning anything, just adding an edge
+
+### GetNodes()
+ - Time: O(n) since we are creating a List of n nodes
+ - Space: O(n) since the list is of n length
+
+### GetNeighbors()
+ - Time: O(1) since we are not iterating, just returning a property
+ - Space: O(n) since this depends on the number of neighbors a node has
+
+### Size()
+ - Time: O(n) since we are running a count on the graph size
+ - Space: O(1) since we are returning a single integer representing the graph's size
+
+## API
 ### AddNode()
  - Adds a new node to the graph
  - Takes in the value of that node
@@ -11,7 +33,7 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 
 ### AddEdge()
  - Adds a new edge between two nodes in the graph
- - Include the ability to have a ìweightî
+ - Include the ability to have a ‚Äúweight‚Äù
  - Takes in the two nodes to be connected by the edge
  - Both nodes should already be in the Graph
 
@@ -25,9 +47,3 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 
 ### Size()
  - Returns the total number of nodes in the graph
-
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-## API
-<!-- Description of each method publicly available in your Graph -->
