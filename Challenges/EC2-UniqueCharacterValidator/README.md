@@ -10,5 +10,5 @@ Determine if a string is full of unique characters
 This method boils down to splitting out a string into characters, hashing them, then checking for collisions. If we have a collision, we know the string is not full of unique characters, as each character will map to the same index given the design. If no collisions are found, or the input string is empty, we know that all characters are unique.
 
 ## Efficiency
-- Time: O(n)
-- Space: O(n)
+- Time: O(n) since we have to iterate through the string, character by character checking for collisions
+- Space: O(n) since each of the n unique characters gets added to the hashtable
