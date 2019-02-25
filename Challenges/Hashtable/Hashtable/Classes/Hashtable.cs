@@ -76,7 +76,23 @@ namespace HashTable.Classes
             {
                 return false;
             }
-            return true;
+            else
+            {
+                if (HT[hashedKey].Key == key)
+                {
+                    return true;
+                }
+                Node temp = HT[hashedKey];
+                while (temp.Next != null)
+                {
+                    temp = temp.Next;
+                    if (temp.Key == key)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         /// <summary>

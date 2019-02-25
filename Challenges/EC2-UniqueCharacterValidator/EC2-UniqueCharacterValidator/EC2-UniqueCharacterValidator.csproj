@@ -6,4 +6,10 @@
     <RootNamespace>EC2_UniqueCharacterValidator</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Hashtable">
+      <HintPath>..\..\Hashtable\Hashtable\bin\Debug\netcoreapp2.2\Hashtable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
