@@ -10,11 +10,24 @@ namespace Graph.Classes
         // properties
         public List<Node> Nodes { get; }
 
+        public Graph()
+        {
+            Nodes = new List<Node>();
+        }
+
         // Add a node
-        public static Node AddNode(int value)
+        public Node AddNode(int value)
         {
             Node node = new Node(value);
-            return node;
+            if (Nodes.Contains(node))
+            {
+                return null;
+            }
+            else
+            {
+                Nodes.Add(node);
+                return node;
+            }
         }
 
         // Add an edge
@@ -24,7 +37,7 @@ namespace Graph.Classes
         }
         
         // Get Nodes
-        public static List<Node> GetNodes()
+        public List<Node> GetNodes()
         {
             List<Node> nodes = new List<Node>();
             return nodes;
