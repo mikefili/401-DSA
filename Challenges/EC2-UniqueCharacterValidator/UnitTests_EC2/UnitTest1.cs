@@ -23,5 +23,11 @@ namespace UnitTests_EC2
         {
             Assert.False(Program.UniqueCharValidator("this will fail"));
         }
+
+        [Fact]
+        public void CanValidateStringUniqueWithSpaces()
+        {
+            Assert.True(Program.UniqueCharValidator("a b c d e f g h i j k l m n o p q r s t u v w x y z"));
+        }
     }
 }
