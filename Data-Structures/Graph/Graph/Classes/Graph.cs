@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Graph.Classes
@@ -34,8 +35,11 @@ namespace Graph.Classes
         {
             return node.Neighbors;
         }
-
         
         // Get Size
+        public int Size(Graph graph)
+        {
+            return Nodes.Count();
+        }
     }
 }
