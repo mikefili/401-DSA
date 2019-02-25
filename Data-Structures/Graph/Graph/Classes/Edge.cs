@@ -7,5 +7,10 @@ namespace Graph.Classes
     public class Edge
     {
         public int Weight { get; set; }
+
+        public Edge(int weight)
+        {
+            Weight = weight;
+        }
     }
 }
