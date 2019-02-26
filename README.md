@@ -15,7 +15,7 @@
   <li><a href="/Challenges/ArrayInsert">Insert & Shift an Array</a></li>
   <li><a href="/Challenges/BinarySearch">Array Binary Search</a></li>
   <li><a href="/Challenges/KthFromEnd/ll_kth_from_end">Kth Value in Linked List</a></li>
-  <li><a href="/Challenges/LLMerge/ll_merge">Linked List Mergez</a></li>
+  <li><a href="/Challenges/LLMerge/ll_merge">Linked List Merge</a></li>
   <li><a href="/Challenges/QueueWithStacks/QueueWithStacks">Queue with Stacks</a></li>
   <li><a href="/Challenges/MultiBracketValidation">Multi Bracket Validation</a></li>
   <li><a href="/Challenges/FizzBuzzTree">FizzBuzz Tree</a></li>
