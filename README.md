@@ -24,6 +24,7 @@
   <li><a href="/Challenges/RepeatedWord">Repeated Word</a></li>
   <li><a href="/Challenges/TreeIntersection">Tree Intersection</a></li>
   <li><a href="/Challenges/LeftJoin">Left Join</a></li>
+  <li><a href="/Challenges/BreadthFirstGraph">Breadth First Graph</a></li>
 </ol>
 
 <h3>Extra Credit</h3>
