@@ -19,7 +19,7 @@
   <li><a href="/Challenges/QueueWithStacks/QueueWithStacks">Queue with Stacks</a></li>
   <li><a href="/Challenges/MultiBracketValidation">Multi Bracket Validation</a></li>
   <li><a href="/Challenges/FizzBuzzTree">FizzBuzz Tree</a></li>
-  <li><a href=/Challenges/BreadthFirstTraversal"">Breadth First Traversal</a></li>
+  <li><a href="/Challenges/BreadthFirstTraversal">Breadth First Traversal</a></li>
   <li><a href="/Challenges/FindMaximumValue">Find Maximum Value</a></li>
   <li><a href="/Challenges/RepeatedWord">Repeated Word</a></li>
   <li><a href="/Challenges/TreeIntersection">Tree Intersection</a></li>
