@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreadthFirstGraph", "BreadthFirstGraph\BreadthFirstGraph.csproj", "{503D8E14-C11B-4781-A335-C63DE2F53046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests_BreadthFirstGraph", "UnitTests_BreadthFirstGraph\UnitTests_BreadthFirstGraph.csproj", "{F4668748-41E9-4CAC-9094-FDA77936DABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503D8E14-C11B-4781-A335-C63DE2F53046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503D8E14-C11B-4781-A335-C63DE2F53046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503D8E14-C11B-4781-A335-C63DE2F53046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503D8E14-C11B-4781-A335-C63DE2F53046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4668748-41E9-4CAC-9094-FDA77936DABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4668748-41E9-4CAC-9094-FDA77936DABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4668748-41E9-4CAC-9094-FDA77936DABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4668748-41E9-4CAC-9094-FDA77936DABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B11F16FC-AA94-46F3-BAE9-A4EC36320F17}
+	EndGlobalSection
+EndGlobal
